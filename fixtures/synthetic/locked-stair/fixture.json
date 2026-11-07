@@ -1,0 +1,176 @@
+{
+  "fixture_id": "locked-stair",
+  "fixture_version": "0.1.0",
+  "title": "The Locked Stair",
+  "language": "en",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "rights_note": "Original text written for this repository (CC0-1.0). Contains no third-party literary content.",
+  "story_file": "story.md",
+  "graph_schema_version": 1,
+  "scenario": "delayed-identity",
+  "entities": [
+    {
+      "id": "e_ishida",
+      "type": "PERSON",
+      "first_reveal": 1,
+      "label": "Mr. Ishida"
+    },
+    {
+      "id": "e_grey",
+      "type": "PERSONA",
+      "first_reveal": 2,
+      "label": "man in the grey coat"
+    },
+    {
+      "id": "e_keeper",
+      "type": "PERSON",
+      "first_reveal": 1,
+      "label": "the keep"
+    },
+    {
+      "id": "e_porter",
+      "type": "PERSON",
+      "first_reveal": 4,
+      "label": "the porter"
+    },
+    {
+      "id": "loc_guesthouse",
+      "type": "LOCATION",
+      "first_reveal": 1,
+      "label": "the guesthouse"
+    }
+  ],
+  "names": [
+    {
+      "id": "n_ishida",
+      "entity_id": "e_ishida",
+      "display_text": "Mr. Ishida",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_grey",
+      "entity_id": "e_grey",
+      "display_text": "the man in the grey coat",
+      "first_reveal": 2
+    },
+    {
+      "id": "n_porter",
+      "entity_id": "e_porter",
+      "display_text": "the porter",
+      "first_reveal": 4
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a_signed",
+      "subject_id": "e_ishida",
+      "predicate": "signed_register",
+      "object_ref": "loc_guesthouse",
+      "attribution": "NARRATOR",
+      "first_reveal": 1,
+      "status": "OBSERVED"
+    },
+    {
+      "id": "a_grey_on_stair",
+      "subject_id": "e_grey",
+      "predicate": "was_on_stair",
+      "object_ref": "loc_guesthouse",
+      "attribution": "WITNESS_CLAIM",
+      "first_reveal": 2,
+      "status": "CLAIMED"
+    },
+    {
+      "id": "a_ishida_stayed",
+      "subject_id": "e_ishida",
+      "predicate": "stayed_in_room",
+      "object_ref": "loc_guesthouse",
+      "attribution": "WITNESS_CLAIM",
+      "first_reveal": 3,
+      "status": "CLAIMED"
+    },
+    {
+      "id": "a_grey_left",
+      "subject_id": "e_grey",
+      "predicate": "left_at_midnight",
+      "object_ref": "loc_guesthouse",
+      "attribution": "WITNESS_CLAIM",
+      "first_reveal": 4,
+      "status": "CLAIMED"
+    }
+  ],
+  "identity_links": [
+    {
+      "id": "l_grey_is_ishida",
+      "entity_ids": [
+        "e_ishida",
+        "e_grey"
+      ],
+      "kind": "CONFIRMED",
+      "first_reveal": 3
+    }
+  ],
+  "status_changes": [
+    {
+      "id": "t_stayed_contradicted",
+      "assertion_id": "a_ishida_stayed",
+      "reveal_ordinal": 4,
+      "status": "CONTRADICTED"
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "expected_present": [
+        "e_ishida",
+        "n_ishida",
+        "a_signed"
+      ],
+      "forbidden": [
+        "e_grey",
+        "n_grey",
+        "l_grey_is_ishida",
+        "a_grey_on_stair"
+      ],
+      "note": "The grey coat and the second persona must not exist yet."
+    },
+    {
+      "ordinal": 2,
+      "expected_present": [
+        "e_ishida",
+        "e_grey",
+        "n_grey",
+        "a_grey_on_stair"
+      ],
+      "forbidden": [
+        "l_grey_is_ishida",
+        "a_ishida_stayed",
+        "e_porter"
+      ],
+      "note": "Two separate personas; no identity edge, no omniscient link."
+    },
+    {
+      "ordinal": 3,
+      "expected_present": [
+        "l_grey_is_ishida",
+        "a_ishida_stayed"
+      ],
+      "forbidden": [
+        "e_porter",
+        "a_grey_left",
+        "t_stayed_contradicted"
+      ],
+      "note": "Merge allowed only now; the porter and the contradiction are still future."
+    },
+    {
+      "ordinal": 4,
+      "expected_present": [
+        "e_porter",
+        "a_grey_left",
+        "t_stayed_contradicted"
+      ],
+      "forbidden": [],
+      "note": "Conflict visible; the earlier claim still renders as CLAIMED at ordinal 3."
+    }
+  ],
+  "notes": "A projection that shows a merged identity at ordinal 2, or that renames the grey coat as 'Mr. Ishida' before scene 3, fails the fixture."
+}

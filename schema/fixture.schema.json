@@ -1,0 +1,308 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.mixu.app/fixtures/v1/fixture.schema.json",
+  "title": "SyntheticSpoilerFixture",
+  "description": "A rights-cleared synthetic story plus the graph annotations and reveal horizons used to test projection filtering. Every identifier is local to the fixture.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "fixture_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "fixture_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "type": "string",
+      "description": "BCP 47 tag of the story text."
+    },
+    "content_basis": {
+      "type": "string",
+      "enum": [
+        "SYNTHETIC_ORIGINAL",
+        "PUBLIC_DOMAIN",
+        "EXPLICITLY_LICENSED"
+      ]
+    },
+    "rights_note": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Why this text may be committed and redistributed."
+    },
+    "story_file": {
+      "type": "string",
+      "description": "Markdown file, relative to this fixture directory."
+    },
+    "graph_schema_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "scenario": {
+      "type": "string",
+      "enum": [
+        "chronological",
+        "many-aliases",
+        "unreliable-narrator",
+        "delayed-identity",
+        "conflicting-testimony",
+        "multimodal",
+        "edition-variant",
+        "typography"
+      ],
+      "description": "Which evaluation scenario from docs/testing/test-and-evaluation.md this fixture covers."
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "PERSON",
+              "PERSONA",
+              "LOCATION",
+              "ORGANIZATION",
+              "OBJECT"
+            ]
+          },
+          "first_reveal": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "label": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "first_reveal"
+        ]
+      }
+    },
+    "names": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "entity_id": {
+            "type": "string"
+          },
+          "display_text": {
+            "type": "string"
+          },
+          "first_reveal": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "id",
+          "entity_id",
+          "display_text",
+          "first_reveal"
+        ]
+      }
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "subject_id": {
+            "type": "string"
+          },
+          "predicate": {
+            "type": "string"
+          },
+          "object_ref": {
+            "type": "string"
+          },
+          "attribution": {
+            "type": "string",
+            "enum": [
+              "OBSERVATION",
+              "NARRATOR",
+              "WITNESS_CLAIM",
+              "READER_INFERENCE",
+              "LATER_CONFIRMATION"
+            ]
+          },
+          "first_reveal": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "OBSERVED",
+              "CLAIMED",
+              "INFERRED",
+              "CORROBORATED",
+              "CONTRADICTED",
+              "RETRACTED",
+              "UNRESOLVED"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "subject_id",
+          "predicate",
+          "attribution",
+          "first_reveal",
+          "status"
+        ]
+      }
+    },
+    "identity_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "entity_ids": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string"
+            }
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "CANDIDATE",
+              "SUPPORTED",
+              "CONFIRMED"
+            ]
+          },
+          "first_reveal": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "id",
+          "entity_ids",
+          "kind",
+          "first_reveal"
+        ]
+      }
+    },
+    "status_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "assertion_id": {
+            "type": "string"
+          },
+          "reveal_ordinal": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "OBSERVED",
+              "CLAIMED",
+              "INFERRED",
+              "CORROBORATED",
+              "CONTRADICTED",
+              "RETRACTED",
+              "UNRESOLVED"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "assertion_id",
+          "reveal_ordinal",
+          "status"
+        ]
+      }
+    },
+    "horizons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ordinal": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "expected_present": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Identifiers that must be visible at this ordinal."
+          },
+          "forbidden": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Identifiers that must NOT be visible at this ordinal. A leak here is a stop-ship defect."
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ordinal",
+          "expected_present",
+          "forbidden"
+        ]
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-form reviewer note about what a failing fixture proves."
+    }
+  },
+  "required": [
+    "fixture_id",
+    "fixture_version",
+    "title",
+    "language",
+    "content_basis",
+    "rights_note",
+    "story_file",
+    "graph_schema_version",
+    "scenario",
+    "entities",
+    "names",
+    "assertions",
+    "horizons"
+  ]
+}

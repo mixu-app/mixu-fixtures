@@ -1,0 +1,12 @@
+mixu-fixtures
+Copyright 2026 The Mixu (谜序) Authors
+
+Fixture story text and annotations (everything under fixtures/) are dedicated to
+the public domain under CC0 1.0 Universal. The full text is in LICENSE.
+
+Tools, schemas and CI configuration are licensed under the Apache License,
+Version 2.0; the full text is in LICENSES/Apache-2.0.txt.
+
+"Mixu" and "谜序" are product names of the project owner; no trademark license
+is granted. A fixture whose `content_basis` is not SYNTHETIC_ORIGINAL carries
+its own rights note, which takes precedence for that text.

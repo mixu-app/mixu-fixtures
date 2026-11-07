@@ -1,0 +1,8 @@
+/.venv/
+__pycache__/
+*.pyc
+/local/
+/.worktrees/
+.DS_Store
+.carryctx/config.local.toml
+.worktrees/

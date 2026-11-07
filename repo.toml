@@ -1,0 +1,15 @@
+# mixu-fixtures: workspace identity descriptor (mirrors workspace.toml).
+[repo]
+name = "mixu-fixtures"
+kind = "fixtures"
+lang = "md/json"
+role = "rights-cleared synthetic narrative corpus and spoiler regression fixtures"
+visibility = "public"
+owner = "mixu-core"
+docs = "mixu-docs"
+
+[contracts.provides]
+spoiler-corpus = "fixtures/synthetic"  # annotated mini-mysteries with forbidden-reveal lists
+
+[contracts.consumes]
+graph-pack-schema = "mixu-contracts: schemas/graph/*.schema.json"
