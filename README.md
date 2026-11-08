@@ -18,6 +18,7 @@ schema/fixture.schema.json     # fixture 格式（本仓库自有，引用 graph
 fixtures/synthetic/<id>/       # 每个 fixture 一个目录
   story.md                     # 故事正文（原创或公有领域）
   fixture.json                 # 实体、名称、声称、身份合并、状态变更、horizon 标注
+  PROVENANCE.md                # 来源、作者、CC0-1.0 声明与版权干净边界证明
 tools/validate_fixtures.py     # 校验标注自洽（不需要网络）
 ```
 
@@ -38,11 +39,11 @@ just validate
 
 ## 现有语料
 
-| Fixture | 场景 | 证明什么 |
-|---|---|---|
-| [`locked-stair`](fixtures/synthetic/locked-stair/fixture.json) | 延迟身份揭示 | 第 2 个 horizon 之前，"灰大衣的人"与"石田先生"必须是两个实体；第 3 个 horizon 才允许合并 |
-| [`silent-courier`](fixtures/synthetic/silent-courier/fixture.json) | 延迟身份揭示 | 第 3 个 horizon 之前，"无声信使"与"万斯医生"必须独立；第 4 个 horizon 才允许确认合并并推翻不在场证明 |
-| [`false-witness`](fixtures/synthetic/false-witness/fixture.json) | 对抗性追溯修正 | 第 3 个 horizon 之前禁止泄露"钟表匠"的真实姓名；第 4 个 horizon 之前不可信证词必须保持 CLAIMED 状态，证据与认罪后才允许 CONTRADICTED 与 RETRACTED 追溯修正 |
+| Fixture | 场景 | 证明什么 | 来源与权利 |
+|---|---|---|---|
+| [`locked-stair`](fixtures/synthetic/locked-stair/fixture.json) | 延迟身份揭示 | 第 2 个 horizon 之前，"灰大衣的人"与"石田先生"必须是两个实体；第 3 个 horizon 才允许合并 | [PROVENANCE.md](fixtures/synthetic/locked-stair/PROVENANCE.md) |
+| [`silent-courier`](fixtures/synthetic/silent-courier/fixture.json) | 延迟身份揭示 | 第 3 个 horizon 之前，"无声信使"与"万斯医生"必须独立；第 4 个 horizon 才允许确认合并并推翻不在场证明 | [PROVENANCE.md](fixtures/synthetic/silent-courier/PROVENANCE.md) |
+| [`false-witness`](fixtures/synthetic/false-witness/fixture.json) | 对抗性追溯修正 | 第 3 个 horizon 之前禁止泄露"钟表匠"的真实姓名；第 4 个 horizon 之前不可信证词必须保持 CLAIMED 状态，证据与认罪后才允许 CONTRADICTED 与 RETRACTED 追溯修正 | [PROVENANCE.md](fixtures/synthetic/false-witness/PROVENANCE.md) |
 
 ## English
 

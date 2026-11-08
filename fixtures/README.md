@@ -7,6 +7,7 @@ A fixture is a directory under `fixtures/synthetic/` (or a future
 <fixture-id>/
   story.md        # the narrative text; original or public domain
   fixture.json    # annotations consumed by tests and by the extraction harness
+  PROVENANCE.md   # origin, authorship, rights dedication, and clean boundary guarantee
 ```
 
 `fixture.json` is validated against `schema/fixture.schema.json` and then
@@ -51,3 +52,23 @@ Only public-domain or explicitly licensed text, with the licence recorded in
 `rights_note` and, where required, the attribution preserved verbatim in
 `story.md`. When in doubt, write an original text instead: it is cheaper than a
 rights review and equally useful for projection tests.
+
+## Provenance and rights documentation
+
+Every corpus maintains an explicit provenance record in `PROVENANCE.md` (and the
+top-level [fixtures provenance record](PROVENANCE.md)). It establishes:
+
+1. **Authorship & generation method:** How the story was authored, ensuring it is
+   an original synthetic composition designed for knowledge-horizon testing.
+2. **Rights dedication:** Irrevocable dedication to the public domain under
+   [CC0-1.0](../LICENSE).
+3. **Clean boundary guarantee:** Confirmation that no third-party literary works,
+   extracts from copyrighted novels, or user data are present.
+4. **Redistribution safety:** Confirmation that the corpus is safe for inclusion in
+   Git submodules across open-source and commercial distributions.
+
+Per-corpus records:
+
+- [`locked-stair`](synthetic/locked-stair/PROVENANCE.md)
+- [`silent-courier`](synthetic/silent-courier/PROVENANCE.md)
+- [`false-witness`](synthetic/false-witness/PROVENANCE.md)

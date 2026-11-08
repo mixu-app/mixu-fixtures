@@ -17,3 +17,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   CONTRADICTED/RETRACTED transitions.
 - `tools/validate_fixtures.py`, which rejects self-contradictory annotations and
   missing references; `just check` runs it.
+- Comprehensive provenance and rights documentation per corpus (`PROVENANCE.md`
+  in `fixtures/`, `locked-stair`, `silent-courier`, and `false-witness`),
+  certifying 100% original synthetic generation, CC0-1.0 public domain dedication,
+  clean boundary guarantees, and submodule redistribution safety.
