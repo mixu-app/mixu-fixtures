@@ -41,6 +41,7 @@ just validate
 | Fixture | 场景 | 证明什么 |
 |---|---|---|
 | [`locked-stair`](fixtures/synthetic/locked-stair/fixture.json) | 延迟身份揭示 | 第 2 个 horizon 之前，"灰大衣的人"与"石田先生"必须是两个实体；第 3 个 horizon 才允许合并 |
+| [`silent-courier`](fixtures/synthetic/silent-courier/fixture.json) | 延迟身份揭示 | 第 3 个 horizon 之前，"无声信使"与"万斯医生"必须独立；第 4 个 horizon 才允许确认合并并推翻不在场证明 |
 
 ## English
 
