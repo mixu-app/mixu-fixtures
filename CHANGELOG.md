@@ -21,3 +21,9 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   in `fixtures/`, `locked-stair`, `silent-courier`, and `false-witness`),
   certifying 100% original synthetic generation, CC0-1.0 public domain dedication,
   clean boundary guarantees, and submodule redistribution safety.
+- `fixtures/eval/english-spoiler-eval`: English evaluation slice with 68 synthetic samples
+  across train/val/test splits, evaluating 6 core spoiler challenges and claim vs. fact vs. inference boundaries.
+- `fixtures/eval/japanese-spoiler-eval`: Japanese evaluation slice with 68 synthetic samples
+  across train/val/test splits, evaluating modal/hearsay particles, ruby annotation invariance (HTML and Aozora Bunko formats), and shin-honkaku mystery conventions.
+- `fixtures/eval/CROSS_LANGUAGE_AUDIT.md`: Cross-language boundary analysis and 24-item audit
+  register certifying semantic boundary invariance across Chinese, English, and Japanese.
