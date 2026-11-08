@@ -44,7 +44,9 @@ just validate
 | [`locked-stair`](fixtures/synthetic/locked-stair/fixture.json) | 延迟身份揭示 | 第 2 个 horizon 之前，"灰大衣的人"与"石田先生"必须是两个实体；第 3 个 horizon 才允许合并 | [PROVENANCE.md](fixtures/synthetic/locked-stair/PROVENANCE.md) |
 | [`silent-courier`](fixtures/synthetic/silent-courier/fixture.json) | 延迟身份揭示 | 第 3 个 horizon 之前，"无声信使"与"万斯医生"必须独立；第 4 个 horizon 才允许确认合并并推翻不在场证明 | [PROVENANCE.md](fixtures/synthetic/silent-courier/PROVENANCE.md) |
 | [`false-witness`](fixtures/synthetic/false-witness/fixture.json) | 对抗性追溯修正 | 第 3 个 horizon 之前禁止泄露"钟表匠"的真实姓名；第 4 个 horizon 之前不可信证词必须保持 CLAIMED 状态，证据与认罪后才允许 CONTRADICTED 与 RETRACTED 追溯修正 | [PROVENANCE.md](fixtures/synthetic/false-witness/PROVENANCE.md) |
-| [`chinese-spoiler-eval`](fixtures/eval/chinese-spoiler-eval/eval-set.json) | 剧透判定评测集 | 220 条中文微型悬疑样本，覆盖直接透露、隐性提示、身份别名、错误推论、良性解释与同义转述，严格按文本隔离 train/val/test | [PROVENANCE.md](fixtures/eval/chinese-spoiler-eval/PROVENANCE.md) |
+| [`chinese-spoiler-eval`](fixtures/eval/chinese-spoiler-eval/eval-set.json) | 剧透判定评测集（中文） | 220 条中文微型悬疑样本，覆盖直接透露、隐性提示、身份别名、错误推论、良性解释与同义转述，严格按文本隔离 train/val/test | [PROVENANCE.md](fixtures/eval/chinese-spoiler-eval/PROVENANCE.md) |
+| [`english-spoiler-eval`](fixtures/eval/english-spoiler-eval/eval-set.json) | 剧透判定评测集（英文） | 68 条英文微型悬疑样本，覆盖 6 大剧透挑战及 claim/fact/inference 认知边界，严格按文本隔离 train/val/test | [PROVENANCE.md](fixtures/eval/english-spoiler-eval/PROVENANCE.md) |
+| [`japanese-spoiler-eval`](fixtures/eval/japanese-spoiler-eval/eval-set.json) | 剧透判定评测集（日文） | 68 条日文新本格微型悬疑样本，含 HTML 及青空文库格式ルビ注音与语气助词边界测试，严格按文本隔离 train/val/test | [PROVENANCE.md](fixtures/eval/japanese-spoiler-eval/PROVENANCE.md) |
 
 ## English
 

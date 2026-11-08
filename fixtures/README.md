@@ -73,3 +73,6 @@ Per-corpus records:
 - [`silent-courier`](synthetic/silent-courier/PROVENANCE.md)
 - [`false-witness`](synthetic/false-witness/PROVENANCE.md)
 - [`chinese-spoiler-eval`](eval/chinese-spoiler-eval/PROVENANCE.md)
+- [`english-spoiler-eval`](eval/english-spoiler-eval/PROVENANCE.md)
+- [`japanese-spoiler-eval`](eval/japanese-spoiler-eval/PROVENANCE.md)
+- [Cross-Language Boundary Audit](eval/CROSS_LANGUAGE_AUDIT.md)
