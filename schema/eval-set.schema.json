@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.mixu.app/fixtures/v1/eval-set.schema.json",
+  "title": "SpoilerEvaluationSet",
+  "description": "A held-out evaluation set for spoiler decisions, built from synthetic text owned under CC0-1.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "name",
+    "version",
+    "description",
+    "content_basis",
+    "rights_note",
+    "source_texts",
+    "samples"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content_basis": {
+      "type": "string",
+      "enum": ["SYNTHETIC_ORIGINAL", "PUBLIC_DOMAIN", "EXPLICITLY_LICENSED"]
+    },
+    "rights_note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_texts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "description", "split", "total_horizons"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "split": {
+            "type": "string",
+            "enum": ["train", "val", "test"]
+          },
+          "total_horizons": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "samples": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "source_text_id",
+          "horizon_ordinal",
+          "reading_state_summary",
+          "candidate_text",
+          "category",
+          "label",
+          "rationale",
+          "split"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "source_text_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "horizon_ordinal": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "reading_state_summary": {
+            "type": "string",
+            "minLength": 5
+          },
+          "candidate_text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "direct_reveal",
+              "implicit_hint",
+              "alias_identity",
+              "wrong_inference",
+              "benign_explanation",
+              "paraphrase"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "enum": ["SPOILER", "SAFE"]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 5
+          },
+          "split": {
+            "type": "string",
+            "enum": ["train", "val", "test"]
+          }
+        }
+      }
+    }
+  }
+}
