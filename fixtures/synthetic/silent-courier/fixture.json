@@ -1,0 +1,226 @@
+{
+  "fixture_id": "silent-courier",
+  "fixture_version": "0.1.0",
+  "title": "The Silent Courier",
+  "language": "en",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "rights_note": "Original text written for this repository (CC0-1.0). Contains no third-party literary content.",
+  "story_file": "story.md",
+  "graph_schema_version": 1,
+  "scenario": "delayed-identity",
+  "entities": [
+    {
+      "id": "e_clara",
+      "type": "PERSON",
+      "first_reveal": 1,
+      "label": "Inspector Clara"
+    },
+    {
+      "id": "e_miller",
+      "type": "PERSON",
+      "first_reveal": 1,
+      "label": "Constable Miller"
+    },
+    {
+      "id": "e_courier",
+      "type": "PERSONA",
+      "first_reveal": 1,
+      "label": "the silent courier"
+    },
+    {
+      "id": "loc_watchhouse",
+      "type": "LOCATION",
+      "first_reveal": 1,
+      "label": "the Old Watchhouse"
+    },
+    {
+      "id": "obj_cylinder",
+      "type": "OBJECT",
+      "first_reveal": 1,
+      "label": "sealed copper cylinder"
+    },
+    {
+      "id": "e_vance",
+      "type": "PERSON",
+      "first_reveal": 2,
+      "label": "Dr. Vance"
+    },
+    {
+      "id": "loc_infirmary",
+      "type": "LOCATION",
+      "first_reveal": 2,
+      "label": "St. Jude's Infirmary"
+    },
+    {
+      "id": "obj_ledger",
+      "type": "OBJECT",
+      "first_reveal": 3,
+      "label": "fraudulent account ledger"
+    },
+    {
+      "id": "obj_mantle",
+      "type": "OBJECT",
+      "first_reveal": 4,
+      "label": "waxcloth mantle"
+    }
+  ],
+  "names": [
+    {
+      "id": "n_clara",
+      "entity_id": "e_clara",
+      "display_text": "Inspector Clara",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_miller",
+      "entity_id": "e_miller",
+      "display_text": "Constable Miller",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_courier",
+      "entity_id": "e_courier",
+      "display_text": "the silent courier",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_vance",
+      "entity_id": "e_vance",
+      "display_text": "Dr. Vance",
+      "first_reveal": 2
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a_courier_delivered",
+      "subject_id": "e_courier",
+      "predicate": "delivered_cylinder",
+      "object_ref": "loc_watchhouse",
+      "attribution": "OBSERVATION",
+      "first_reveal": 1,
+      "status": "OBSERVED"
+    },
+    {
+      "id": "a_vance_alibi",
+      "subject_id": "e_vance",
+      "predicate": "claimed_stayed_at_ward",
+      "object_ref": "loc_infirmary",
+      "attribution": "WITNESS_CLAIM",
+      "first_reveal": 2,
+      "status": "CLAIMED"
+    },
+    {
+      "id": "a_ledger_found",
+      "subject_id": "e_courier",
+      "predicate": "provided_hospital_ledger",
+      "object_ref": "loc_infirmary",
+      "attribution": "OBSERVATION",
+      "first_reveal": 3,
+      "status": "OBSERVED"
+    },
+    {
+      "id": "a_vance_confessed",
+      "subject_id": "e_vance",
+      "predicate": "confessed_as_courier",
+      "object_ref": "loc_watchhouse",
+      "attribution": "WITNESS_CLAIM",
+      "first_reveal": 4,
+      "status": "CLAIMED"
+    }
+  ],
+  "identity_links": [
+    {
+      "id": "l_courier_is_vance",
+      "entity_ids": [
+        "e_courier",
+        "e_vance"
+      ],
+      "kind": "CONFIRMED",
+      "first_reveal": 4
+    }
+  ],
+  "status_changes": [
+    {
+      "id": "t_vance_alibi_contradicted",
+      "assertion_id": "a_vance_alibi",
+      "reveal_ordinal": 4,
+      "status": "CONTRADICTED"
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "expected_present": [
+        "a_courier_delivered",
+        "e_clara",
+        "e_courier",
+        "e_miller",
+        "loc_watchhouse",
+        "n_clara",
+        "n_courier",
+        "n_miller",
+        "obj_cylinder"
+      ],
+      "forbidden": [
+        "a_ledger_found",
+        "a_vance_alibi",
+        "a_vance_confessed",
+        "e_vance",
+        "l_courier_is_vance",
+        "loc_infirmary",
+        "n_vance",
+        "obj_ledger",
+        "obj_mantle",
+        "t_vance_alibi_contradicted"
+      ],
+      "note": "At ordinal 1, only the anonymous courier and the midnight delivery are known. Dr. Vance, the infirmary, and any late identity link must not exist."
+    },
+    {
+      "ordinal": 2,
+      "expected_present": [
+        "a_vance_alibi",
+        "e_courier",
+        "e_vance",
+        "loc_infirmary",
+        "n_vance"
+      ],
+      "forbidden": [
+        "a_ledger_found",
+        "a_vance_confessed",
+        "l_courier_is_vance",
+        "obj_ledger",
+        "obj_mantle",
+        "t_vance_alibi_contradicted"
+      ],
+      "note": "Dr. Vance is introduced with an alibi; the courier and Dr. Vance are distinct entities with no identity link or chemical evidence."
+    },
+    {
+      "ordinal": 3,
+      "expected_present": [
+        "a_ledger_found",
+        "e_courier",
+        "e_vance",
+        "obj_ledger"
+      ],
+      "forbidden": [
+        "a_vance_confessed",
+        "l_courier_is_vance",
+        "obj_mantle",
+        "t_vance_alibi_contradicted"
+      ],
+      "note": "Chemical traces connect the cylinder to the hospital laboratory, but the courier's identity remains unmerged and Dr. Vance's alibi stands."
+    },
+    {
+      "ordinal": 4,
+      "expected_present": [
+        "a_vance_confessed",
+        "l_courier_is_vance",
+        "obj_mantle",
+        "t_vance_alibi_contradicted"
+      ],
+      "forbidden": [],
+      "note": "The identity link between the silent courier and Dr. Vance is confirmed; Dr. Vance's alibi is contradicted."
+    }
+  ],
+  "notes": "A projection that merges the silent courier with Dr. Vance before ordinal 4, or leaks Dr. Vance's confession or contradicted alibi prior to scene 4, fails this fixture."
+}

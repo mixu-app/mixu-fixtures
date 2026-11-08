@@ -10,5 +10,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   plus per-horizon "must be visible" / "must not be visible" annotations.
 - `fixtures/synthetic/locked-stair`: original delayed-identity mini-mystery
   (CC0-1.0) with four horizons and a conflicting-testimony status change.
+- `fixtures/synthetic/silent-courier`: second delayed-identity mini-mystery
+  (CC0-1.0) with four horizons, delayed identity link, and alibi contradiction.
 - `tools/validate_fixtures.py`, which rejects self-contradictory annotations and
   missing references; `just check` runs it.
