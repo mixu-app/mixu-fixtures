@@ -66,7 +66,7 @@ def validate_fixture(path: Path) -> list[str]:
     if not story.exists() or not story.read_text(encoding="utf-8").strip():
         problems.append(f"{rel}: story_file {fixture['story_file']} missing or empty")
 
-    ids = [item["id"] for key in ("entities", "names", "assertions", "identity_links") for item in fixture[key]]
+    ids = [item["id"] for key in ("entities", "names", "assertions", "identity_links") for item in fixture.get(key, [])]
     ids += [item["id"] for item in fixture.get("status_changes", [])]
     duplicates = sorted({i for i in ids if ids.count(i) > 1})
     for duplicate in duplicates:

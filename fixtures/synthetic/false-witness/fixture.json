@@ -1,0 +1,265 @@
+{
+  "fixture_id": "false-witness",
+  "fixture_version": "0.1.0",
+  "title": "The False Witness",
+  "language": "en",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "rights_note": "Original text written for this repository (CC0-1.0). Contains no third-party literary content.",
+  "story_file": "story.md",
+  "graph_schema_version": 1,
+  "scenario": "adversarial-retroactive",
+  "entities": [
+    {
+      "id": "e_bradley",
+      "type": "PERSON",
+      "first_reveal": 1,
+      "label": "Detective Bradley"
+    },
+    {
+      "id": "e_julian",
+      "type": "PERSON",
+      "first_reveal": 1,
+      "label": "the Clockmaker"
+    },
+    {
+      "id": "loc_manor",
+      "type": "LOCATION",
+      "first_reveal": 1,
+      "label": "Highgate Manor"
+    },
+    {
+      "id": "obj_chronometer",
+      "type": "OBJECT",
+      "first_reveal": 1,
+      "label": "golden chronometer"
+    },
+    {
+      "id": "e_gable",
+      "type": "PERSON",
+      "first_reveal": 2,
+      "label": "Mrs. Gable"
+    },
+    {
+      "id": "e_cole",
+      "type": "PERSON",
+      "first_reveal": 2,
+      "label": "Thomas Cole"
+    },
+    {
+      "id": "loc_conservatory",
+      "type": "LOCATION",
+      "first_reveal": 2,
+      "label": "the conservatory"
+    },
+    {
+      "id": "loc_workshop",
+      "type": "LOCATION",
+      "first_reveal": 3,
+      "label": "Southwark workshop"
+    },
+    {
+      "id": "obj_logbook",
+      "type": "OBJECT",
+      "first_reveal": 4,
+      "label": "holding-cell logbook"
+    }
+  ],
+  "names": [
+    {
+      "id": "n_bradley",
+      "entity_id": "e_bradley",
+      "display_text": "Detective Bradley",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_clockmaker",
+      "entity_id": "e_julian",
+      "display_text": "the Clockmaker",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_gable",
+      "entity_id": "e_gable",
+      "display_text": "Mrs. Gable",
+      "first_reveal": 2
+    },
+    {
+      "id": "n_cole",
+      "entity_id": "e_cole",
+      "display_text": "Thomas Cole",
+      "first_reveal": 2
+    },
+    {
+      "id": "n_julian_price",
+      "entity_id": "e_julian",
+      "display_text": "Julian Price",
+      "first_reveal": 3
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a_theft_occurred",
+      "subject_id": "e_julian",
+      "predicate": "stole_chronometer",
+      "object_ref": "loc_manor",
+      "attribution": "OBSERVATION",
+      "first_reveal": 1,
+      "status": "OBSERVED"
+    },
+    {
+      "id": "a_gable_claims_cole_fled",
+      "subject_id": "e_gable",
+      "predicate": "claimed_cole_fled_towards_conservatory",
+      "object_ref": "loc_conservatory",
+      "attribution": "WITNESS_CLAIM",
+      "first_reveal": 2,
+      "status": "CLAIMED"
+    },
+    {
+      "id": "a_gable_claims_cole_key",
+      "subject_id": "e_gable",
+      "predicate": "claimed_cole_threw_key",
+      "object_ref": "loc_conservatory",
+      "attribution": "WITNESS_CLAIM",
+      "first_reveal": 2,
+      "status": "CLAIMED"
+    },
+    {
+      "id": "a_price_held_chronometer",
+      "subject_id": "e_julian",
+      "predicate": "hid_chronometer_at_workshop",
+      "object_ref": "loc_workshop",
+      "attribution": "OBSERVATION",
+      "first_reveal": 3,
+      "status": "OBSERVED"
+    },
+    {
+      "id": "a_price_confession",
+      "subject_id": "e_julian",
+      "predicate": "confessed_acted_alone",
+      "object_ref": "loc_manor",
+      "attribution": "LATER_CONFIRMATION",
+      "first_reveal": 3,
+      "status": "OBSERVED"
+    },
+    {
+      "id": "a_cole_holding_cell",
+      "subject_id": "e_cole",
+      "predicate": "held_in_station_custody",
+      "object_ref": "obj_logbook",
+      "attribution": "OBSERVATION",
+      "first_reveal": 4,
+      "status": "OBSERVED"
+    },
+    {
+      "id": "a_gable_confessed_fabrication",
+      "subject_id": "e_gable",
+      "predicate": "confessed_fabricating_accusation",
+      "object_ref": "loc_manor",
+      "attribution": "LATER_CONFIRMATION",
+      "first_reveal": 4,
+      "status": "OBSERVED"
+    }
+  ],
+  "status_changes": [
+    {
+      "id": "t_gable_claim_contradicted",
+      "assertion_id": "a_gable_claims_cole_fled",
+      "reveal_ordinal": 4,
+      "status": "CONTRADICTED"
+    },
+    {
+      "id": "t_gable_key_retracted",
+      "assertion_id": "a_gable_claims_cole_key",
+      "reveal_ordinal": 4,
+      "status": "RETRACTED"
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "expected_present": [
+        "a_theft_occurred",
+        "e_bradley",
+        "e_julian",
+        "loc_manor",
+        "n_bradley",
+        "n_clockmaker",
+        "obj_chronometer"
+      ],
+      "forbidden": [
+        "a_cole_holding_cell",
+        "a_gable_claims_cole_fled",
+        "a_gable_claims_cole_key",
+        "a_gable_confessed_fabrication",
+        "a_price_confession",
+        "a_price_held_chronometer",
+        "e_cole",
+        "e_gable",
+        "loc_conservatory",
+        "loc_workshop",
+        "n_cole",
+        "n_gable",
+        "n_julian_price",
+        "obj_logbook",
+        "t_gable_claim_contradicted",
+        "t_gable_key_retracted"
+      ],
+      "note": "At ordinal 1, only the manor theft and the 'Clockmaker' persona are revealed. Julian Price's civil identity, Mrs. Gable's testimony, and later corrections are forbidden."
+    },
+    {
+      "ordinal": 2,
+      "expected_present": [
+        "a_gable_claims_cole_fled",
+        "a_gable_claims_cole_key",
+        "e_cole",
+        "e_gable",
+        "loc_conservatory",
+        "n_cole",
+        "n_gable"
+      ],
+      "forbidden": [
+        "a_cole_holding_cell",
+        "a_gable_confessed_fabrication",
+        "a_price_confession",
+        "a_price_held_chronometer",
+        "loc_workshop",
+        "n_julian_price",
+        "obj_logbook",
+        "t_gable_claim_contradicted",
+        "t_gable_key_retracted"
+      ],
+      "note": "Mrs. Gable gives unverified witness testimony against Cole with status CLAIMED; the Clockmaker's true civil name, Price's workshop, and all contradictions remain forbidden."
+    },
+    {
+      "ordinal": 3,
+      "expected_present": [
+        "a_price_confession",
+        "a_price_held_chronometer",
+        "loc_workshop",
+        "n_julian_price"
+      ],
+      "forbidden": [
+        "a_cole_holding_cell",
+        "a_gable_confessed_fabrication",
+        "obj_logbook",
+        "t_gable_claim_contradicted",
+        "t_gable_key_retracted"
+      ],
+      "note": "Julian Price's identity as the Clockmaker is established and the stolen item is found, but Mrs. Gable's claims still render as CLAIMED; police logbook and retractions are forbidden."
+    },
+    {
+      "ordinal": 4,
+      "expected_present": [
+        "a_cole_holding_cell",
+        "a_gable_confessed_fabrication",
+        "obj_logbook",
+        "t_gable_claim_contradicted",
+        "t_gable_key_retracted"
+      ],
+      "forbidden": [],
+      "note": "Alibi logbook confirms Cole was in jail; Mrs. Gable confesses fabrication and her claims transition to CONTRADICTED and RETRACTED."
+    }
+  ],
+  "notes": "A projection that reveals the civil name 'Julian Price' before ordinal 3, or applies retroactive CONTRADICTED or RETRACTED status to Mrs. Gable's claims prior to ordinal 4, fails this fixture."
+}
