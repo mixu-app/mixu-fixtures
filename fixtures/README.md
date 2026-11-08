@@ -72,3 +72,4 @@ Per-corpus records:
 - [`locked-stair`](synthetic/locked-stair/PROVENANCE.md)
 - [`silent-courier`](synthetic/silent-courier/PROVENANCE.md)
 - [`false-witness`](synthetic/false-witness/PROVENANCE.md)
+- [`chinese-spoiler-eval`](eval/chinese-spoiler-eval/PROVENANCE.md)

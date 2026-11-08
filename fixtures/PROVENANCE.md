@@ -81,6 +81,7 @@ under CC0-1.0:
 | [`locked-stair`](synthetic/locked-stair/fixture.json) | Delayed identity reveal | `SYNTHETIC_ORIGINAL` | CC0-1.0 | [PROVENANCE.md](synthetic/locked-stair/PROVENANCE.md) |
 | [`silent-courier`](synthetic/silent-courier/fixture.json) | Disguise & alibi contradiction | `SYNTHETIC_ORIGINAL` | CC0-1.0 | [PROVENANCE.md](synthetic/silent-courier/PROVENANCE.md) |
 | [`false-witness`](synthetic/false-witness/fixture.json) | Adversarial retroactive retraction | `SYNTHETIC_ORIGINAL` | CC0-1.0 | [PROVENANCE.md](synthetic/false-witness/PROVENANCE.md) |
+| [`chinese-spoiler-eval`](eval/chinese-spoiler-eval/eval-set.json) | Spoiler decision evaluation benchmark | `SYNTHETIC_ORIGINAL` | CC0-1.0 | [PROVENANCE.md](eval/chinese-spoiler-eval/PROVENANCE.md) |
 
 ## Future corpora and admission criteria
 
