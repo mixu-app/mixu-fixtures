@@ -1,0 +1,235 @@
+{
+  "fixture_id": "labyrinth-manuscript-loop",
+  "fixture_version": "0.1.0",
+  "title": "星晷馆的迷宫手稿与二重轮回",
+  "language": "zh-Hans",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "rights_note": "Original Chinese synthetic micro-mystery written for this repository (CC0-1.0). Contains no third-party literary content.",
+  "story_file": "story.md",
+  "graph_schema_version": 1,
+  "scenario": "adversarial-retroactive",
+  "entities": [
+    {
+      "id": "e_author_kuga",
+      "type": "PERSON",
+      "first_reveal": 1,
+      "label": "作家久我怜司"
+    },
+    {
+      "id": "loc_mansion",
+      "type": "LOCATION",
+      "first_reveal": 1,
+      "label": "星晷馆书房"
+    },
+    {
+      "id": "obj_manuscript",
+      "type": "OBJECT",
+      "first_reveal": 1,
+      "label": "《迷宫草稿》手稿"
+    },
+    {
+      "id": "e_detective_kanzaki",
+      "type": "PERSON",
+      "first_reveal": 2,
+      "label": "侦探神崎理人"
+    },
+    {
+      "id": "e_secretary_shiina",
+      "type": "PERSON",
+      "first_reveal": 2,
+      "label": "秘书椎名步美"
+    },
+    {
+      "id": "obj_astrolabe",
+      "type": "OBJECT",
+      "first_reveal": 2,
+      "label": "青铜星晷仪"
+    }
+  ],
+  "names": [
+    {
+      "id": "n_author_kuga",
+      "entity_id": "e_author_kuga",
+      "display_text": "久我怜司",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_detective_kanzaki",
+      "entity_id": "e_detective_kanzaki",
+      "display_text": "神崎理人",
+      "first_reveal": 2
+    },
+    {
+      "id": "n_secretary_shiina",
+      "entity_id": "e_secretary_shiina",
+      "display_text": "椎名步美",
+      "first_reveal": 2
+    },
+    {
+      "id": "n_kuga_loop_archivist",
+      "entity_id": "e_author_kuga",
+      "display_text": "轮回记录者久我",
+      "first_reveal": 4
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a_inner_manuscript_death",
+      "subject_id": "e_author_kuga",
+      "predicate": "died_in_clock_tower_fall",
+      "object_ref": "obj_manuscript",
+      "attribution": "NARRATOR",
+      "first_reveal": 1,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "INNER_WORK",
+        "episode_id": "ep_manuscript_ch1"
+      }
+    },
+    {
+      "id": "a_outer_author_alive_epoch1",
+      "subject_id": "e_author_kuga",
+      "predicate": "sealed_manuscript_alive",
+      "object_ref": "loc_mansion",
+      "attribution": "OBSERVATION",
+      "first_reveal": 1,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "loop_epoch": 1
+      }
+    },
+    {
+      "id": "a_epoch1_astrolabe_stopped",
+      "subject_id": "obj_astrolabe",
+      "predicate": "stopped_at_2350_in_bolted_study",
+      "object_ref": "loc_mansion",
+      "attribution": "OBSERVATION",
+      "first_reveal": 2,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "loop_epoch": 1
+      }
+    },
+    {
+      "id": "a_hypothesis_alpha_wire_trick",
+      "subject_id": "e_secretary_shiina",
+      "predicate": "rigged_pendulum_wire_through_transom",
+      "object_ref": "loc_mansion",
+      "attribution": "READER_INFERENCE",
+      "first_reveal": 2,
+      "status": "INFERRED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "loop_epoch": 1,
+        "hypothesis_frame": "solution_alpha",
+        "pov_entity_id": "e_detective_kanzaki"
+      }
+    },
+    {
+      "id": "a_epoch2_shiina_alibi",
+      "subject_id": "e_secretary_shiina",
+      "predicate": "remained_under_watch_in_east_annex",
+      "object_ref": "loc_mansion",
+      "attribution": "OBSERVATION",
+      "first_reveal": 3,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "loop_epoch": 2
+      }
+    },
+    {
+      "id": "a_hypothesis_omega_author_staged",
+      "subject_id": "e_author_kuga",
+      "predicate": "triggered_thermal_latch_via_astrolabe",
+      "object_ref": "obj_astrolabe",
+      "attribution": "LATER_CONFIRMATION",
+      "first_reveal": 4,
+      "status": "CORROBORATED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "loop_epoch": 2,
+        "hypothesis_frame": "solution_omega",
+        "pov_entity_id": "e_detective_kanzaki"
+      }
+    }
+  ],
+  "status_changes": [
+    {
+      "id": "t_solution_alpha_contradicted",
+      "assertion_id": "a_hypothesis_alpha_wire_trick",
+      "reveal_ordinal": 3,
+      "status": "CONTRADICTED"
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "expected_present": [
+        "e_author_kuga",
+        "loc_mansion",
+        "obj_manuscript",
+        "n_author_kuga",
+        "a_inner_manuscript_death",
+        "a_outer_author_alive_epoch1"
+      ],
+      "forbidden": [
+        "e_detective_kanzaki",
+        "e_secretary_shiina",
+        "obj_astrolabe",
+        "n_detective_kanzaki",
+        "n_secretary_shiina",
+        "n_kuga_loop_archivist",
+        "a_epoch1_astrolabe_stopped",
+        "a_hypothesis_alpha_wire_trick",
+        "a_epoch2_shiina_alibi",
+        "a_hypothesis_omega_author_staged",
+        "t_solution_alpha_contradicted"
+      ],
+      "note": "At ordinal 1, the INNER_WORK death inside the manuscript coexists with the OUTER_REALITY author being alive in loop_epoch 1; no detective hypotheses or loop_epoch 2 facts are visible."
+    },
+    {
+      "ordinal": 2,
+      "expected_present": [
+        "e_detective_kanzaki",
+        "e_secretary_shiina",
+        "obj_astrolabe",
+        "n_detective_kanzaki",
+        "n_secretary_shiina",
+        "a_epoch1_astrolabe_stopped",
+        "a_hypothesis_alpha_wire_trick"
+      ],
+      "forbidden": [
+        "n_kuga_loop_archivist",
+        "a_epoch2_shiina_alibi",
+        "a_hypothesis_omega_author_staged",
+        "t_solution_alpha_contradicted"
+      ],
+      "note": "At ordinal 2, Kanzaki's first hypothesis (solution_alpha) is INFERRED in loop_epoch 1; its refutation in loop_epoch 2 and the final solution_omega remain forbidden."
+    },
+    {
+      "ordinal": 3,
+      "expected_present": [
+        "a_epoch2_shiina_alibi",
+        "t_solution_alpha_contradicted"
+      ],
+      "forbidden": [
+        "n_kuga_loop_archivist",
+        "a_hypothesis_omega_author_staged"
+      ],
+      "note": "At ordinal 3, loop_epoch 2 observations and the sealed transom refute solution_alpha (CONTRADICTED), while the superseding solution_omega remains forbidden until ordinal 4."
+    },
+    {
+      "ordinal": 4,
+      "expected_present": [
+        "n_kuga_loop_archivist",
+        "a_hypothesis_omega_author_staged"
+      ],
+      "forbidden": [],
+      "note": "At ordinal 4, solution_omega is revealed and corroborated, exposing the author's thermal-latch mechanism across epochs and the deliberate INNER_WORK manuscript misdirection."
+    }
+  ],
+  "notes": "Proves three Shin-Honkaku anti-spoiler invariants: (1) an INNER_WORK manuscript death at ordinal 1 must not mark the OUTER_REALITY author dead, (2) facts from loop_epoch 2 must not leak into loop_epoch 1 at ordinals 1-2, and (3) hypothesis_frame 'solution_alpha' transitions to CONTRADICTED at ordinal 3 while 'solution_omega' stays forbidden before ordinal 4."
+}
