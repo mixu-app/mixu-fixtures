@@ -127,6 +127,12 @@ def validate_fixture(path: Path) -> list[str]:
             problems.append(
                 f"{rel}: assertion {assertion['id']} references unknown subject {assertion['subject_id']}"
             )
+        qualifier = assertion.get("qualifier") or {}
+        pov_id = qualifier.get("pov_entity_id")
+        if pov_id and pov_id not in entity_ids:
+            problems.append(
+                f"{rel}: assertion {assertion['id']} qualifier references unknown pov_entity_id {pov_id}"
+            )
     assertion_ids = {item["id"] for item in fixture["assertions"]}
     for change in fixture.get("status_changes", []):
         if change["assertion_id"] not in assertion_ids:

@@ -27,3 +27,13 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   across train/val/test splits, evaluating modal/hearsay particles, ruby annotation invariance (HTML and Aozora Bunko formats), and shin-honkaku mystery conventions.
 - `fixtures/eval/CROSS_LANGUAGE_AUDIT.md`: Cross-language boundary analysis and 24-item audit
   register certifying semantic boundary invariance across Chinese, English, and Japanese.
+- Backward-compatible `qualifier` object on `assertions` in `schema/fixture.schema.json`
+  supporting `diegetic_layer`, `hypothesis_frame`, `loop_epoch`, `episode_id`,
+  `generation_era`, and `pov_entity_id`.
+- `fixtures/synthetic/sunflower-persona-trick`: Chinese Shin-Honkaku delayed-identity
+  synthetic fixture (CC0-1.0) testing generational shared-surname separation and
+  non-human narrator persona delayed merge.
+- `fixtures/synthetic/labyrinth-manuscript-loop`: Chinese Shin-Honkaku adversarial-retroactive
+  synthetic fixture (CC0-1.0) testing nested manuscript diegesis (`INNER_WORK` vs.
+  `OUTER_REALITY`), time-loop epochs (`loop_epoch`), and competing detective
+  hypothesis cascades (`solution_alpha` vs. `solution_omega`).

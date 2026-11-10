@@ -23,6 +23,7 @@ checked for internal consistency by `tools/validate_fixtures.py`.
 | `names[].first_reveal` | An alias revealed later must not rename the entity earlier |
 | `identity_links[].first_reveal` | Before this ordinal the two personas stay separate |
 | `assertions[].attribution` | Narrator, witness claim, observation and inference are different classes |
+| `assertions[].qualifier` | Optional diegetic layer (`INNER_WORK`/`OUTER_REALITY`), loop epoch, generation era, POV entity, or hypothesis frame |
 | `status_changes[].reveal_ordinal` | Later evidence appends a transition; earlier views keep the earlier status |
 | `horizons[]` | The actual test cases: what must appear, what must not, at ordinal `r` |
 
@@ -72,6 +73,8 @@ Per-corpus records:
 - [`locked-stair`](synthetic/locked-stair/PROVENANCE.md)
 - [`silent-courier`](synthetic/silent-courier/PROVENANCE.md)
 - [`false-witness`](synthetic/false-witness/PROVENANCE.md)
+- [`sunflower-persona-trick`](synthetic/sunflower-persona-trick/PROVENANCE.md)
+- [`labyrinth-manuscript-loop`](synthetic/labyrinth-manuscript-loop/PROVENANCE.md)
 - [`chinese-spoiler-eval`](eval/chinese-spoiler-eval/PROVENANCE.md)
 - [`english-spoiler-eval`](eval/english-spoiler-eval/PROVENANCE.md)
 - [`japanese-spoiler-eval`](eval/japanese-spoiler-eval/PROVENANCE.md)

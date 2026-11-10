@@ -163,6 +163,38 @@
               "RETRACTED",
               "UNRESOLVED"
             ]
+          },
+          "qualifier": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Optional diegetic, temporal-epoch, generational, or hypothesis-frame scope for Shin-Honkaku narrative tricks.",
+            "properties": {
+              "diegetic_layer": {
+                "type": "string",
+                "enum": [
+                  "OUTER_REALITY",
+                  "INNER_WORK",
+                  "META_FRAME",
+                  "FOLKLORE_REFERENCE"
+                ]
+              },
+              "hypothesis_frame": {
+                "type": "string"
+              },
+              "loop_epoch": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "episode_id": {
+                "type": "string"
+              },
+              "generation_era": {
+                "type": "string"
+              },
+              "pov_entity_id": {
+                "type": "string"
+              }
+            }
           }
         },
         "required": [

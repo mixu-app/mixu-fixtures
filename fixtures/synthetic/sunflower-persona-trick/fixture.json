@@ -1,0 +1,294 @@
+{
+  "fixture_id": "sunflower-persona-trick",
+  "fixture_version": "0.1.0",
+  "title": "向日葵庭院的守望者",
+  "language": "zh-Hans",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "rights_note": "Original Chinese synthetic micro-mystery written for this repository (CC0-1.0). Contains no third-party literary content.",
+  "story_file": "story.md",
+  "graph_schema_version": 1,
+  "scenario": "delayed-identity",
+  "entities": [
+    {
+      "id": "e_narrator_persona",
+      "type": "PERSONA",
+      "first_reveal": 1,
+      "label": "庭院里的守望者"
+    },
+    {
+      "id": "e_kiryuu_elder",
+      "type": "PERSON",
+      "first_reveal": 1,
+      "label": "桐生家长辈（桐生宪一）"
+    },
+    {
+      "id": "loc_greenhouse",
+      "type": "LOCATION",
+      "first_reveal": 1,
+      "label": "向日葵温室"
+    },
+    {
+      "id": "obj_brass_key",
+      "type": "OBJECT",
+      "first_reveal": 1,
+      "label": "黄铜修剪钥匙"
+    },
+    {
+      "id": "e_kiryuu_younger",
+      "type": "PERSON",
+      "first_reveal": 2,
+      "label": "桐生家晚辈（桐生慎司）"
+    },
+    {
+      "id": "e_steward",
+      "type": "PERSON",
+      "first_reveal": 2,
+      "label": "老管家佐伯"
+    },
+    {
+      "id": "e_missing_witness",
+      "type": "PERSONA",
+      "first_reveal": 2,
+      "label": "失踪的庭院目击者"
+    }
+  ],
+  "names": [
+    {
+      "id": "n_narrator_watcher",
+      "entity_id": "e_narrator_persona",
+      "display_text": "庭院里的守望者",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_kiryuu_shared_elder",
+      "entity_id": "e_kiryuu_elder",
+      "display_text": "桐生先生（三十年前）",
+      "first_reveal": 1
+    },
+    {
+      "id": "n_kiryuu_shared_younger",
+      "entity_id": "e_kiryuu_younger",
+      "display_text": "年轻的桐生先生",
+      "first_reveal": 2
+    },
+    {
+      "id": "n_steward",
+      "entity_id": "e_steward",
+      "display_text": "老管家佐伯",
+      "first_reveal": 2
+    },
+    {
+      "id": "n_missing_witness",
+      "entity_id": "e_missing_witness",
+      "display_text": "失踪的庭院目击者",
+      "first_reveal": 2
+    },
+    {
+      "id": "n_kiryuu_elder_full",
+      "entity_id": "e_kiryuu_elder",
+      "display_text": "桐生宪一",
+      "first_reveal": 3
+    },
+    {
+      "id": "n_kiryuu_younger_full",
+      "entity_id": "e_kiryuu_younger",
+      "display_text": "桐生慎司",
+      "first_reveal": 3
+    },
+    {
+      "id": "n_narrator_tortoise",
+      "entity_id": "e_narrator_persona",
+      "display_text": "陆龟琥珀",
+      "first_reveal": 4
+    }
+  ],
+  "assertions": [
+    {
+      "id": "a_elder_locked_key",
+      "subject_id": "e_kiryuu_elder",
+      "predicate": "locked_key_in_cabinet",
+      "object_ref": "obj_brass_key",
+      "attribution": "NARRATOR",
+      "first_reveal": 1,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "generation_era": "era_thirty_years_ago",
+        "pov_entity_id": "e_narrator_persona"
+      }
+    },
+    {
+      "id": "a_persona_watched_courtyard",
+      "subject_id": "e_narrator_persona",
+      "predicate": "watched_from_low_veranda",
+      "object_ref": "loc_greenhouse",
+      "attribution": "NARRATOR",
+      "first_reveal": 1,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "generation_era": "era_thirty_years_ago",
+        "pov_entity_id": "e_narrator_persona"
+      }
+    },
+    {
+      "id": "a_younger_entered_greenhouse",
+      "subject_id": "e_kiryuu_younger",
+      "predicate": "entered_on_storm_night",
+      "object_ref": "loc_greenhouse",
+      "attribution": "NARRATOR",
+      "first_reveal": 2,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "generation_era": "era_present_summer",
+        "pov_entity_id": "e_narrator_persona"
+      }
+    },
+    {
+      "id": "a_witness_footprints",
+      "subject_id": "e_missing_witness",
+      "predicate": "left_low_gravel_traces",
+      "object_ref": "loc_greenhouse",
+      "attribution": "WITNESS_CLAIM",
+      "first_reveal": 2,
+      "status": "CLAIMED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "generation_era": "era_present_summer",
+        "pov_entity_id": "e_steward"
+      }
+    },
+    {
+      "id": "a_generations_distinct",
+      "subject_id": "e_kiryuu_younger",
+      "predicate": "is_nephew_of_elder_kiryuu",
+      "object_ref": "e_kiryuu_elder",
+      "attribution": "OBSERVATION",
+      "first_reveal": 3,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "generation_era": "era_present_summer"
+      }
+    },
+    {
+      "id": "a_tortoise_carried_key",
+      "subject_id": "e_narrator_persona",
+      "predicate": "carried_key_on_carapace_ring",
+      "object_ref": "obj_brass_key",
+      "attribution": "LATER_CONFIRMATION",
+      "first_reveal": 4,
+      "status": "OBSERVED",
+      "qualifier": {
+        "diegetic_layer": "OUTER_REALITY",
+        "generation_era": "era_present_summer",
+        "pov_entity_id": "e_narrator_persona"
+      }
+    }
+  ],
+  "identity_links": [
+    {
+      "id": "l_persona_is_witness",
+      "entity_ids": [
+        "e_narrator_persona",
+        "e_missing_witness"
+      ],
+      "kind": "CONFIRMED",
+      "first_reveal": 4
+    }
+  ],
+  "status_changes": [
+    {
+      "id": "t_witness_footprints_corroborated",
+      "assertion_id": "a_witness_footprints",
+      "reveal_ordinal": 4,
+      "status": "CORROBORATED"
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "expected_present": [
+        "e_narrator_persona",
+        "e_kiryuu_elder",
+        "loc_greenhouse",
+        "obj_brass_key",
+        "n_narrator_watcher",
+        "n_kiryuu_shared_elder",
+        "a_elder_locked_key",
+        "a_persona_watched_courtyard"
+      ],
+      "forbidden": [
+        "e_kiryuu_younger",
+        "e_steward",
+        "e_missing_witness",
+        "n_kiryuu_shared_younger",
+        "n_steward",
+        "n_missing_witness",
+        "n_kiryuu_elder_full",
+        "n_kiryuu_younger_full",
+        "n_narrator_tortoise",
+        "a_younger_entered_greenhouse",
+        "a_witness_footprints",
+        "a_generations_distinct",
+        "a_tortoise_carried_key",
+        "l_persona_is_witness",
+        "t_witness_footprints_corroborated"
+      ],
+      "note": "At ordinal 1, only the thirty-years-ago scene, the elder Kiryuu, and the narrator persona are visible; present-day entities, given names, and the tortoise reveal are forbidden."
+    },
+    {
+      "ordinal": 2,
+      "expected_present": [
+        "e_narrator_persona",
+        "e_kiryuu_elder",
+        "e_kiryuu_younger",
+        "e_steward",
+        "e_missing_witness",
+        "n_kiryuu_shared_younger",
+        "n_steward",
+        "n_missing_witness",
+        "a_younger_entered_greenhouse",
+        "a_witness_footprints"
+      ],
+      "forbidden": [
+        "n_kiryuu_elder_full",
+        "n_kiryuu_younger_full",
+        "n_narrator_tortoise",
+        "a_generations_distinct",
+        "a_tortoise_carried_key",
+        "l_persona_is_witness",
+        "t_witness_footprints_corroborated"
+      ],
+      "note": "At ordinal 2, both Kiryuu entities are present but unmerged, and the missing witness is separate from the narrator persona; full generational names and the tortoise identity link remain forbidden."
+    },
+    {
+      "ordinal": 3,
+      "expected_present": [
+        "n_kiryuu_elder_full",
+        "n_kiryuu_younger_full",
+        "a_generations_distinct"
+      ],
+      "forbidden": [
+        "n_narrator_tortoise",
+        "a_tortoise_carried_key",
+        "l_persona_is_witness",
+        "t_witness_footprints_corroborated"
+      ],
+      "note": "At ordinal 3, the family register distinguishes Kiryuu Kenichi (elder) from Kiryuu Shinji (younger) without merging them, while the narrator persona's tortoise identity and link to the missing witness are still forbidden."
+    },
+    {
+      "ordinal": 4,
+      "expected_present": [
+        "n_narrator_tortoise",
+        "a_tortoise_carried_key",
+        "l_persona_is_witness",
+        "t_witness_footprints_corroborated"
+      ],
+      "forbidden": [],
+      "note": "At ordinal 4, the narrator persona is revealed as the tortoise Kohaku and confirmed identical to the missing courtyard witness, while the two Kiryuu family members remain distinct entities."
+    }
+  ],
+  "notes": "Proves two orthogonal Shin-Honkaku anti-spoiler invariants: (1) two family members sharing the surname '桐生' across generations ('e_kiryuu_elder' vs 'e_kiryuu_younger') must never be collapsed into a single entity, and (2) the first-person narrator persona ('e_narrator_persona') and the missing courtyard witness ('e_missing_witness') must remain separate until ordinal 4."
+}
