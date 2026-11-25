@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "case_id": "gm-zh-02",
+  "scenario": "same_surname_distinct_people",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "license": "CC0-1.0",
+  "rights_note": "Original synthetic micro-story authored for this benchmark; no external narrative source or personal data.",
+  "facts": [
+    {
+      "fact_id": "f1",
+      "kind": "assertion",
+      "subject": "周禾",
+      "relation": "occupation",
+      "object": "钟表修理员",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 1,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 22,
+          "end": 33,
+          "quote": "周禾是一名钟表修理员。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f2",
+      "kind": "assertion",
+      "subject": "周澜",
+      "relation": "occupation",
+      "object": "地图绘制员",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 2,
+      "provenance": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 24,
+          "end": 35,
+          "quote": "周澜是一名地图绘制员。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f3",
+      "kind": "assertion",
+      "subject": "周禾",
+      "relation": "distinct_from",
+      "object": "周澜",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 28,
+          "end": 47,
+          "quote": "证件核验确认周禾和周澜是两个不同的人。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f4",
+      "kind": "assertion",
+      "subject": "周禾",
+      "relation": "delivered",
+      "object": "黄铜钟@北室",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 17,
+          "end": 28,
+          "quote": "周禾把黄铜钟交给北室。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f5",
+      "kind": "assertion",
+      "subject": "周澜",
+      "relation": "delivered",
+      "object": "河道图@南室",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 5,
+      "provenance": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 24,
+          "end": 35,
+          "quote": "周澜把河道图交给南室。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f6",
+      "kind": "assertion",
+      "subject": "清点",
+      "relation": "confirms",
+      "object": "黄铜钟@北室;河道图@南室",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 25,
+          "end": 43,
+          "quote": "清点确认黄铜钟在北室，河道图在南室。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e1",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 22,
+          "end": 24,
+          "text": "周禾"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 34,
+          "end": 36,
+          "text": "周禾"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 17,
+          "end": 19,
+          "text": "周禾"
+        }
+      ],
+      "name": "周禾",
+      "aliases": [],
+      "layer": "OUTER"
+    },
+    {
+      "entity_id": "e2",
+      "mentions": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 24,
+          "end": 26,
+          "text": "周澜"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 37,
+          "end": 39,
+          "text": "周澜"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 24,
+          "end": 26,
+          "text": "周澜"
+        }
+      ],
+      "name": "周澜",
+      "aliases": [],
+      "layer": "OUTER"
+    }
+  ],
+  "identity_constraints": [
+    {
+      "left": "e1",
+      "right": "e2",
+      "relation": "DISTINCT",
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 28,
+          "end": 47,
+          "quote": "证件核验确认周禾和周澜是两个不同的人。"
+        }
+      ]
+    }
+  ],
+  "transitions": [],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "required_fact_ids": [
+        "f1"
+      ],
+      "forbidden_fact_ids": [
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "required_fact_ids": [
+        "f1",
+        "f2"
+      ],
+      "forbidden_fact_ids": [
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "forbidden_fact_ids": [
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "forbidden_fact_ids": [
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "forbidden_fact_ids": [
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "forbidden_fact_ids": []
+    }
+  ]
+}

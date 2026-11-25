@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "case_id": "gm-en-02",
+  "scenario": "nested_loop_layer_isolation",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "license": "CC0-1.0",
+  "rights_note": "Original synthetic micro-story authored for this benchmark; no external narrative source or personal data.",
+  "facts": [
+    {
+      "fact_id": "f1",
+      "kind": "assertion",
+      "subject": "Ivo",
+      "relation": "entered",
+      "object": "loop one",
+      "layer": "INNER:loop1",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 1,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 68,
+          "end": 134,
+          "quote": "Inside the notebook, a fictional diver named Ivo entered loop one."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f2",
+      "kind": "assertion",
+      "subject": "Ivo",
+      "relation": "broke",
+      "object": "glass bell",
+      "layer": "INNER:loop1",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 2,
+      "provenance": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 86,
+          "end": 124,
+          "quote": "In loop one, Ivo broke the glass bell."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f3",
+      "kind": "assertion",
+      "subject": "Mara",
+      "relation": "placed",
+      "object": "intact glass bell@shelf",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 73,
+          "end": 140,
+          "quote": "In the outer workroom, Mara placed an intact glass bell on a shelf."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f4",
+      "kind": "assertion",
+      "subject": "glass bell",
+      "relation": "condition",
+      "object": "intact",
+      "layer": "INNER:loop2",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 85,
+          "end": 143,
+          "quote": "The notebook reset to loop two with its glass bell intact."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f5",
+      "kind": "assertion",
+      "subject": "Ivo",
+      "relation": "left_untouched",
+      "object": "glass bell",
+      "layer": "INNER:loop2",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 5,
+      "provenance": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 54,
+          "end": 101,
+          "quote": "In loop two, Ivo left the glass bell untouched."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f6",
+      "kind": "assertion",
+      "subject": "outer glass bell",
+      "relation": "condition",
+      "object": "intact",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 76,
+          "end": 125,
+          "quote": "The outer shelf still held its intact glass bell."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e1",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 7,
+          "end": 11,
+          "text": "Mara"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 0,
+          "end": 4,
+          "text": "Mara"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 96,
+          "end": 100,
+          "text": "Mara"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 144,
+          "end": 148,
+          "text": "Mara"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 102,
+          "end": 106,
+          "text": "Mara"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 0,
+          "end": 4,
+          "text": "Mara"
+        }
+      ],
+      "name": "Mara",
+      "aliases": [],
+      "layer": "OUTER"
+    },
+    {
+      "entity_id": "e2",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 113,
+          "end": 116,
+          "text": "Ivo"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 99,
+          "end": 102,
+          "text": "Ivo"
+        }
+      ],
+      "layer": "INNER:loop1",
+      "name": "Ivo",
+      "aliases": []
+    },
+    {
+      "entity_id": "e3",
+      "mentions": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 67,
+          "end": 70,
+          "text": "Ivo"
+        }
+      ],
+      "layer": "INNER:loop2",
+      "name": "Ivo",
+      "aliases": []
+    }
+  ],
+  "identity_constraints": [],
+  "transitions": [],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "required_fact_ids": [
+        "f1"
+      ],
+      "forbidden_fact_ids": [
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "required_fact_ids": [
+        "f1",
+        "f2"
+      ],
+      "forbidden_fact_ids": [
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "forbidden_fact_ids": [
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "forbidden_fact_ids": [
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "forbidden_fact_ids": [
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "forbidden_fact_ids": []
+    }
+  ]
+}

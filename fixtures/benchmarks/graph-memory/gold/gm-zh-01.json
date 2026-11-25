@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "case_id": "gm-zh-01",
+  "scenario": "distant_clue_recurrence",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "license": "CC0-1.0",
+  "rights_note": "Original synthetic micro-story authored for this benchmark; no external narrative source or personal data.",
+  "facts": [
+    {
+      "fact_id": "f1",
+      "kind": "assertion",
+      "subject": "纪宁",
+      "relation": "stored",
+      "object": "蓝伞@甲柜",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 1,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 36,
+          "end": 56,
+          "quote": "纪宁把一把缺了第三根伞骨的蓝伞放进甲柜。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f2",
+      "kind": "assertion",
+      "subject": "送货员",
+      "relation": "placed",
+      "object": "白纸@门口",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 2,
+      "provenance": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 44,
+          "end": 57,
+          "quote": "送货员把两卷白纸放在门口。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f3",
+      "kind": "assertion",
+      "subject": "管理员",
+      "relation": "replaced",
+      "object": "走廊灯泡",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 44,
+          "end": 56,
+          "quote": "管理员更换了走廊的灯泡。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f4",
+      "kind": "assertion",
+      "subject": "纪宁",
+      "relation": "moved",
+      "object": "空纸箱@后院",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 42,
+          "end": 55,
+          "quote": "纪宁把三个空纸箱移到后院。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f5",
+      "kind": "assertion",
+      "subject": "交来蓝伞",
+      "relation": "has_damage",
+      "object": "第三根伞骨缺失",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 5,
+      "provenance": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 49,
+          "end": 63,
+          "quote": "新交来的蓝伞缺了第三根伞骨。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f6",
+      "kind": "assertion",
+      "subject": "交来蓝伞",
+      "relation": "same_as",
+      "object": "甲柜蓝伞",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 44,
+          "end": 63,
+          "quote": "纪宁确认交来的蓝伞就是甲柜里那把蓝伞。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e1",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 21,
+          "end": 23,
+          "text": "纪宁"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 11,
+          "end": 13,
+          "text": "纪宁"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 42,
+          "end": 44,
+          "text": "纪宁"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 37,
+          "end": 39,
+          "text": "纪宁"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 0,
+          "end": 2,
+          "text": "纪宁"
+        }
+      ],
+      "name": "纪宁",
+      "aliases": [],
+      "layer": "OUTER"
+    },
+    {
+      "entity_id": "e2",
+      "mentions": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 50,
+          "end": 55,
+          "text": "交来的蓝伞"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 48,
+          "end": 53,
+          "text": "交来的蓝伞"
+        }
+      ],
+      "name": "交来蓝伞",
+      "aliases": [
+        "交来的蓝伞"
+      ],
+      "layer": "OUTER"
+    },
+    {
+      "entity_id": "e3",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 39,
+          "end": 51,
+          "text": "一把缺了第三根伞骨的蓝伞"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 55,
+          "end": 62,
+          "text": "甲柜里那把蓝伞"
+        }
+      ],
+      "name": "甲柜蓝伞",
+      "aliases": [
+        "一把缺了第三根伞骨的蓝伞",
+        "甲柜里那把蓝伞"
+      ],
+      "layer": "OUTER"
+    }
+  ],
+  "identity_constraints": [
+    {
+      "left": "e2",
+      "right": "e3",
+      "relation": "SAME_AS",
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 44,
+          "end": 63,
+          "quote": "纪宁确认交来的蓝伞就是甲柜里那把蓝伞。"
+        }
+      ]
+    }
+  ],
+  "transitions": [],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "required_fact_ids": [
+        "f1"
+      ],
+      "forbidden_fact_ids": [
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "required_fact_ids": [
+        "f1",
+        "f2"
+      ],
+      "forbidden_fact_ids": [
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "forbidden_fact_ids": [
+        "f4",
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "forbidden_fact_ids": [
+        "f5",
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "forbidden_fact_ids": [
+        "f6"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "forbidden_fact_ids": []
+    }
+  ]
+}

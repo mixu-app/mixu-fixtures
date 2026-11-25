@@ -1,0 +1,772 @@
+{
+  "schema_version": 1,
+  "case_id": "hgm-en-01",
+  "scenario": "role_linked_claim_revision",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "license": "CC0-1.0",
+  "rights_note": "Original synthetic held-out narrative authored before any extraction scores; no external narrative source or personal data.",
+  "facts": [
+    {
+      "fact_id": "f1",
+      "kind": "assertion",
+      "subject": "Leon",
+      "relation": "occupation",
+      "object": "bell mender",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 1,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 49,
+          "end": 100,
+          "quote": "Leon was the only bell mender working that evening."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f2",
+      "kind": "assertion",
+      "subject": "Leon",
+      "relation": "received",
+      "object": "copper case",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 2,
+      "provenance": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 73,
+          "end": 124,
+          "quote": "Leon received a copper case tied with a white cord."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f3",
+      "kind": "assertion",
+      "subject": "driver",
+      "relation": "placed",
+      "object": "blue blanket@reception chair",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 40,
+          "end": 100,
+          "quote": "The driver put a folded blue blanket on the reception chair."
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f4",
+      "kind": "assertion",
+      "subject": "Leon",
+      "relation": "stored",
+      "object": "copper case@workshop",
+      "layer": "OUTER",
+      "epistemic_status": "CLAIMED",
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 49,
+          "end": 100,
+          "quote": "Leon was the only bell mender working that evening."
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 73,
+          "end": 124,
+          "quote": "Leon received a copper case tied with a white cord."
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 0,
+          "end": 65,
+          "quote": "At breakfast the caretaker was asked about the missing equipment."
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 66,
+          "end": 138,
+          "quote": "He said, \"The bell mender kept that case in the workshop after closing.\""
+        }
+      ],
+      "qualifier": {
+        "speaker": "caretaker",
+        "polarity": "POSITIVE",
+        "modality": "TESTIMONY"
+      },
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f5",
+      "kind": "assertion",
+      "subject": "cleaner",
+      "relation": "moved",
+      "object": "wooden stool@washroom",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 5,
+      "provenance": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 85,
+          "end": 132,
+          "quote": "A cleaner moved a wooden stool to the washroom."
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f6",
+      "kind": "assertion",
+      "subject": "Leon",
+      "relation": "moved",
+      "object": "copper case@upper landing",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 49,
+          "end": 100,
+          "quote": "Leon was the only bell mender working that evening."
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 73,
+          "end": 124,
+          "quote": "Leon received a copper case tied with a white cord."
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 0,
+          "end": 95,
+          "quote": "The bell mender finished testing the hanging bracket and reached behind the bench for his coat."
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 96,
+          "end": 147,
+          "quote": "He carried the cord-tied case to the upper landing."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f7",
+      "kind": "assertion",
+      "subject": "curator",
+      "relation": "placed",
+      "object": "green watering can@outer steps",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 7,
+      "provenance": [
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 63,
+          "end": 126,
+          "quote": "The curator placed a green watering can beside the outer steps."
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f8",
+      "kind": "assertion",
+      "subject": "Leon",
+      "relation": "stored",
+      "object": "copper case@oak seat",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 8,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 49,
+          "end": 100,
+          "quote": "Leon was the only bell mender working that evening."
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 73,
+          "end": 124,
+          "quote": "Leon received a copper case tied with a white cord."
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 96,
+          "end": 147,
+          "quote": "He carried the cord-tied case to the upper landing."
+        },
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 0,
+          "end": 72,
+          "quote": "The bell mender paused at the landing window while a barge passed below."
+        },
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 73,
+          "end": 116,
+          "quote": "He left the case under the narrow oak seat."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f9",
+      "kind": "assertion",
+      "subject": "messenger",
+      "relation": "placed",
+      "object": "square parcel@tiled floor",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 9,
+      "provenance": [
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 87,
+          "end": 139,
+          "quote": "A messenger laid a square parcel on the tiled floor."
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f10",
+      "kind": "assertion",
+      "subject": "timed image",
+      "relation": "confirms",
+      "object": "Leon:copper case@oak seat",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 10,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 49,
+          "end": 100,
+          "quote": "Leon was the only bell mender working that evening."
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 73,
+          "end": 124,
+          "quote": "Leon received a copper case tied with a white cord."
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 66,
+          "end": 163,
+          "quote": "A timed image shows the bell mender placing the white-cord case under the oak seat after closing."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f11",
+      "kind": "assertion",
+      "subject": "f4",
+      "relation": "status",
+      "object": "RETRACTED",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 11,
+      "provenance": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 66,
+          "end": 138,
+          "quote": "He said, \"The bell mender kept that case in the workshop after closing.\""
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 66,
+          "end": 163,
+          "quote": "A timed image shows the bell mender placing the white-cord case under the oak seat after closing."
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 0,
+          "end": 72,
+          "quote": "The caretaker crossed out one line, leaving the original words readable."
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 73,
+          "end": 163,
+          "quote": "He said, \"I mistook the earlier glimpse for the whole evening; I withdraw that statement.\""
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f12",
+      "kind": "assertion",
+      "subject": "curator",
+      "relation": "placed",
+      "object": "clipped pages@red folder",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 12,
+      "provenance": [
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 56,
+          "end": 111,
+          "quote": "The curator put the clipped pages in a flat red folder."
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e1",
+      "name": "Leon",
+      "aliases": [
+        "bell mender"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 49,
+          "end": 53,
+          "text": "Leon"
+        },
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 67,
+          "end": 78,
+          "text": "bell mender"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 73,
+          "end": 77,
+          "text": "Leon"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 80,
+          "end": 91,
+          "text": "bell mender"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 4,
+          "end": 15,
+          "text": "bell mender"
+        },
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 4,
+          "end": 15,
+          "text": "bell mender"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 90,
+          "end": 101,
+          "text": "bell mender"
+        }
+      ]
+    },
+    {
+      "entity_id": "e2",
+      "name": "copper case",
+      "aliases": [
+        "cord-tied case",
+        "white-cord case"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 89,
+          "end": 100,
+          "text": "copper case"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 111,
+          "end": 125,
+          "text": "cord-tied case"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 114,
+          "end": 129,
+          "text": "white-cord case"
+        }
+      ]
+    },
+    {
+      "entity_id": "e3",
+      "name": "caretaker",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 193,
+          "end": 202,
+          "text": "caretaker"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 17,
+          "end": 26,
+          "text": "caretaker"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 168,
+          "end": 177,
+          "text": "caretaker"
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 4,
+          "end": 13,
+          "text": "caretaker"
+        }
+      ]
+    }
+  ],
+  "identity_constraints": [],
+  "transitions": [
+    {
+      "claim_fact_id": "f4",
+      "target": {
+        "subject": "Leon",
+        "relation": "stored",
+        "object": "copper case@workshop",
+        "layer": "OUTER"
+      },
+      "from_status": "CLAIMED",
+      "to_status": "RETRACTED",
+      "ordinal": 11,
+      "evidence_fact_ids": [
+        "f10",
+        "f11"
+      ]
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "required_fact_ids": [
+        "f1"
+      ],
+      "forbidden_fact_ids": [
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "required_fact_ids": [
+        "f1",
+        "f2"
+      ],
+      "forbidden_fact_ids": [
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "forbidden_fact_ids": [
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "forbidden_fact_ids": [
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "forbidden_fact_ids": [
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "forbidden_fact_ids": [
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ],
+      "forbidden_fact_ids": [
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+      ],
+      "forbidden_fact_ids": [
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9"
+      ],
+      "forbidden_fact_ids": [
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10"
+      ],
+      "forbidden_fact_ids": [
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11"
+      ],
+      "forbidden_fact_ids": [
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ],
+      "forbidden_fact_ids": []
+    }
+  ]
+}

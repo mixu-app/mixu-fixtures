@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "case_id": "gm-en-02",
+  "language": "en",
+  "segments": [
+    {
+      "segment_id": "s001",
+      "ordinal": 1,
+      "text": "Editor Mara opened a rehearsal notebook beside her own work ledger. Inside the notebook, a fictional diver named Ivo entered loop one. The notebook heading explicitly marked this as an invented rehearsal, not a record of the editor's room. Mara kept the two documents apart."
+    },
+    {
+      "segment_id": "s002",
+      "ordinal": 2,
+      "text": "Mara copied the next rehearsal event without turning it into news about the building. In loop one, Ivo broke the glass bell. The notebook described the bell as a stage prop within the fictional loop. No damage to the editor's actual desk or room was recorded."
+    },
+    {
+      "segment_id": "s003",
+      "ordinal": 3,
+      "text": "The editor paused the rehearsal reading and checked her separate ledger. In the outer workroom, Mara placed an intact glass bell on a shelf. This outer bell had its own inventory label. Its condition was not an attempted correction of the fictional bell event inside the notebook."
+    },
+    {
+      "segment_id": "s004",
+      "ordinal": 4,
+      "text": "A new page began with an explicit reset marker, rather than an erased earlier entry. The notebook reset to loop two with its glass bell intact. Mara retained the broken-bell sentence under loop one. The two states belonged to different numbered fictional epochs, not simultaneous physical objects."
+    },
+    {
+      "segment_id": "s005",
+      "ordinal": 5,
+      "text": "The notebook continued under its second-loop heading. In loop two, Ivo left the glass bell untouched. Mara copied the line into the rehearsal index and did not delete the earlier break. The outer workroom ledger was unchanged because neither fictional loop described events on its shelf."
+    },
+    {
+      "segment_id": "s006",
+      "ordinal": 6,
+      "text": "Mara performed one final physical inspection before closing both documents. The outer shelf still held its intact glass bell. Her final note kept the outer inventory, loop-one break and loop-two intact state in separate columns. It offered no identity link between the props across these narrative boundaries."
+    }
+  ]
+}

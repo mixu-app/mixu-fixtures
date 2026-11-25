@@ -1,0 +1,779 @@
+{
+  "schema_version": 1,
+  "case_id": "hgm-zh-01",
+  "scenario": "role_linked_claim_revision",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "license": "CC0-1.0",
+  "rights_note": "Original synthetic held-out narrative authored before any extraction scores; no external narrative source or personal data.",
+  "facts": [
+    {
+      "fact_id": "f1",
+      "kind": "assertion",
+      "subject": "岑雨",
+      "relation": "occupation",
+      "object": "夜班保管员",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 1,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 16,
+          "end": 32,
+          "quote": "岑雨担任这一天唯一的夜班保管员。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f2",
+      "kind": "assertion",
+      "subject": "岑雨",
+      "relation": "received",
+      "object": "青绳钥匙",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 2,
+      "provenance": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 20,
+          "end": 34,
+          "quote": "岑雨接过系着青绳的库房钥匙。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f3",
+      "kind": "assertion",
+      "subject": "岑雨",
+      "relation": "stored",
+      "object": "青绳钥匙@北柜",
+      "layer": "OUTER",
+      "epistemic_status": "CLAIMED",
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 16,
+          "end": 32,
+          "quote": "岑雨担任这一天唯一的夜班保管员。"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 20,
+          "end": 34,
+          "quote": "岑雨接过系着青绳的库房钥匙。"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 0,
+          "end": 17,
+          "quote": "陆遥在晚间问询时回忆交班后的情形。"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 17,
+          "end": 45,
+          "quote": "他说：“夜班保管员把那把钥匙留在北柜，整晚都没有取走。”"
+        }
+      ],
+      "qualifier": {
+        "speaker": "陆遥",
+        "polarity": "POSITIVE",
+        "modality": "TESTIMONY"
+      },
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f4",
+      "kind": "assertion",
+      "subject": "装订工",
+      "relation": "placed",
+      "object": "棕色细线@窗台",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 13,
+          "end": 28,
+          "quote": "装订工把一卷棕色细线放在窗台。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f5",
+      "kind": "assertion",
+      "subject": "送餐人",
+      "relation": "placed",
+      "object": "搪瓷碗@后门台阶",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 5,
+      "provenance": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 20,
+          "end": 37,
+          "quote": "送餐人把两只搪瓷碗摆在后门台阶上。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f6",
+      "kind": "assertion",
+      "subject": "岑雨",
+      "relation": "open_at",
+      "object": "库房门@夜间",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 16,
+          "end": 32,
+          "quote": "岑雨担任这一天唯一的夜班保管员。"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 20,
+          "end": 34,
+          "quote": "岑雨接过系着青绳的库房钥匙。"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 0,
+          "end": 24,
+          "quote": "夜班保管员听见外面有人叫门，穿上挂在门边的外衣。"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 24,
+          "end": 43,
+          "quote": "她从右侧口袋拿出那把钥匙，打开库房门。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f7",
+      "kind": "assertion",
+      "subject": "电工",
+      "relation": "moved",
+      "object": "黑色工具袋@巷口",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 7,
+      "provenance": [
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 16,
+          "end": 29,
+          "quote": "电工把黑色工具袋带到巷口。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f8",
+      "kind": "assertion",
+      "subject": "掌柜",
+      "relation": "placed",
+      "object": "清单@绿色镇纸下",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 8,
+      "provenance": [
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 24,
+          "end": 38,
+          "quote": "掌柜将清单压在绿色镇纸下面。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f9",
+      "kind": "assertion",
+      "subject": "岑雨",
+      "relation": "stored",
+      "object": "青绳钥匙@南抽屉",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 9,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 16,
+          "end": 32,
+          "quote": "岑雨担任这一天唯一的夜班保管员。"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 20,
+          "end": 34,
+          "quote": "岑雨接过系着青绳的库房钥匙。"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 24,
+          "end": 43,
+          "quote": "她从右侧口袋拿出那把钥匙，打开库房门。"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 26,
+          "end": 42,
+          "quote": "她将刚才开门用的钥匙锁进南抽屉。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f10",
+      "kind": "assertion",
+      "subject": "走廊录像",
+      "relation": "confirms",
+      "object": "岑雨:青绳钥匙@南抽屉",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 10,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 16,
+          "end": 32,
+          "quote": "岑雨担任这一天唯一的夜班保管员。"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 0,
+          "end": 21,
+          "quote": "第二天查看走廊录像，陆遥盯着屏幕看了很久。"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 21,
+          "end": 41,
+          "quote": "画面拍到夜班保管员将青绳钥匙放入南抽屉。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f11",
+      "kind": "assertion",
+      "subject": "f3",
+      "relation": "status",
+      "object": "RETRACTED",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 11,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 17,
+          "end": 45,
+          "quote": "他说：“夜班保管员把那把钥匙留在北柜，整晚都没有取走。”"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 21,
+          "end": 41,
+          "quote": "画面拍到夜班保管员将青绳钥匙放入南抽屉。"
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 19,
+          "end": 49,
+          "quote": "他说：“我把短暂放钥匙看成了整晚存放；先前那项陈述我撤回。”"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f12",
+      "kind": "assertion",
+      "subject": "陆遥",
+      "relation": "placed",
+      "object": "修改页@灰色文件夹",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 12,
+      "provenance": [
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 24,
+          "end": 42,
+          "quote": "陆遥把签过名的修改页放进灰色文件夹。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e1",
+      "name": "岑雨",
+      "aliases": [
+        "夜班保管员"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 16,
+          "end": 18,
+          "text": "岑雨"
+        },
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 26,
+          "end": 31,
+          "text": "夜班保管员"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 20,
+          "end": 22,
+          "text": "岑雨"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 21,
+          "end": 26,
+          "text": "夜班保管员"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 0,
+          "end": 5,
+          "text": "夜班保管员"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 0,
+          "end": 5,
+          "text": "夜班保管员"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 25,
+          "end": 30,
+          "text": "夜班保管员"
+        }
+      ]
+    },
+    {
+      "entity_id": "e2",
+      "name": "陆遥",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 0,
+          "end": 2,
+          "text": "陆遥"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 0,
+          "end": 2,
+          "text": "陆遥"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 10,
+          "end": 12,
+          "text": "陆遥"
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 0,
+          "end": 2,
+          "text": "陆遥"
+        },
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 24,
+          "end": 26,
+          "text": "陆遥"
+        }
+      ]
+    },
+    {
+      "entity_id": "e3",
+      "name": "青绳钥匙",
+      "aliases": [
+        "那把钥匙",
+        "库房钥匙"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 29,
+          "end": 33,
+          "text": "库房钥匙"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 27,
+          "end": 31,
+          "text": "那把钥匙"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 32,
+          "end": 36,
+          "text": "那把钥匙"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 58,
+          "end": 62,
+          "text": "库房钥匙"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 31,
+          "end": 35,
+          "text": "青绳钥匙"
+        }
+      ]
+    }
+  ],
+  "identity_constraints": [],
+  "transitions": [
+    {
+      "claim_fact_id": "f3",
+      "target": {
+        "subject": "岑雨",
+        "relation": "stored",
+        "object": "青绳钥匙@北柜",
+        "layer": "OUTER"
+      },
+      "from_status": "CLAIMED",
+      "to_status": "RETRACTED",
+      "ordinal": 11,
+      "evidence_fact_ids": [
+        "f10",
+        "f11"
+      ]
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "required_fact_ids": [
+        "f1"
+      ],
+      "forbidden_fact_ids": [
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "required_fact_ids": [
+        "f1",
+        "f2"
+      ],
+      "forbidden_fact_ids": [
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "forbidden_fact_ids": [
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "forbidden_fact_ids": [
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "forbidden_fact_ids": [
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "forbidden_fact_ids": [
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ],
+      "forbidden_fact_ids": [
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+      ],
+      "forbidden_fact_ids": [
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9"
+      ],
+      "forbidden_fact_ids": [
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10"
+      ],
+      "forbidden_fact_ids": [
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11"
+      ],
+      "forbidden_fact_ids": [
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ],
+      "forbidden_fact_ids": []
+    }
+  ]
+}
