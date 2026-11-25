@@ -1,0 +1,1112 @@
+{
+  "schema_version": 1,
+  "case_id": "ss-zh-01",
+  "scenario": "role_reference_claim_revision_delayed_identity",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "license": "CC0-1.0",
+  "rights_note": "Original Chinese narrative and annotations authored for the sequential source-lookup diagnostic; no published book text or personal/account data.",
+  "entities": [
+    {
+      "entity_id": "e1",
+      "name": "林岚",
+      "aliases": [
+        "装裱师"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 17,
+          "end": 19,
+          "text": "林岚"
+        },
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 27,
+          "end": 30,
+          "text": "装裱师"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 18,
+          "end": 20,
+          "text": "林岚"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 24,
+          "end": 27,
+          "text": "装裱师"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 18,
+          "end": 21,
+          "text": "装裱师"
+        },
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 21,
+          "end": 24,
+          "text": "装裱师"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 31,
+          "end": 34,
+          "text": "装裱师"
+        },
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 32,
+          "end": 34,
+          "text": "林岚"
+        }
+      ]
+    },
+    {
+      "entity_id": "e2",
+      "name": "灰绳铜筒",
+      "aliases": [
+        "铜筒"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 22,
+          "end": 26,
+          "text": "灰绳铜筒"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 11,
+          "end": 13,
+          "text": "铜筒"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 28,
+          "end": 32,
+          "text": "灰绳铜筒"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 13,
+          "end": 15,
+          "text": "铜筒"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 23,
+          "end": 27,
+          "text": "灰绳铜筒"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 25,
+          "end": 27,
+          "text": "铜筒"
+        },
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 25,
+          "end": 29,
+          "text": "灰绳铜筒"
+        },
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 27,
+          "end": 29,
+          "text": "铜筒"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 35,
+          "end": 39,
+          "text": "灰绳铜筒"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 37,
+          "end": 39,
+          "text": "铜筒"
+        },
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 42,
+          "end": 46,
+          "text": "灰绳铜筒"
+        },
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 44,
+          "end": 46,
+          "text": "铜筒"
+        }
+      ]
+    },
+    {
+      "entity_id": "e3",
+      "name": "黄披肩客人",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 14,
+          "end": 19,
+          "text": "黄披肩客人"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 25,
+          "end": 30,
+          "text": "黄披肩客人"
+        },
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 0,
+          "end": 5,
+          "text": "黄披肩客人"
+        }
+      ]
+    },
+    {
+      "entity_id": "e4",
+      "name": "桑禾",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 44,
+          "end": 46,
+          "text": "桑禾"
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 36,
+          "end": 38,
+          "text": "桑禾"
+        },
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 19,
+          "end": 21,
+          "text": "桑禾"
+        }
+      ]
+    },
+    {
+      "entity_id": "e5",
+      "name": "余伯",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 8,
+          "end": 10,
+          "text": "余伯"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 13,
+          "end": 15,
+          "text": "余伯"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 0,
+          "end": 2,
+          "text": "余伯"
+        }
+      ]
+    },
+    {
+      "entity_id": "e6",
+      "name": "沈舟",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 15,
+          "end": 17,
+          "text": "沈舟"
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 59,
+          "end": 61,
+          "text": "沈舟"
+        }
+      ]
+    },
+    {
+      "entity_id": "e7",
+      "name": "蓝色门禁卡",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 25,
+          "end": 30,
+          "text": "蓝色门禁卡"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 37,
+          "end": 42,
+          "text": "蓝色门禁卡"
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 45,
+          "end": 50,
+          "text": "蓝色门禁卡"
+        },
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 22,
+          "end": 27,
+          "text": "蓝色门禁卡"
+        }
+      ]
+    },
+    {
+      "entity_id": "e8",
+      "name": "北柜",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 36,
+          "end": 38,
+          "text": "北柜"
+        }
+      ]
+    },
+    {
+      "entity_id": "e9",
+      "name": "南抽屉",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 31,
+          "end": 34,
+          "text": "南抽屉"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 41,
+          "end": 44,
+          "text": "南抽屉"
+        },
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 36,
+          "end": 39,
+          "text": "南抽屉"
+        }
+      ]
+    },
+    {
+      "entity_id": "e10",
+      "name": "摄像画面",
+      "aliases": [
+        "画面"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 7,
+          "end": 11,
+          "text": "摄像画面"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 9,
+          "end": 11,
+          "text": "画面"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 63,
+          "end": 67,
+          "text": "摄像画面"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 65,
+          "end": 67,
+          "text": "画面"
+        }
+      ]
+    },
+    {
+      "entity_id": "e11",
+      "name": "西廊",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 29,
+          "end": 31,
+          "text": "西廊"
+        },
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 3,
+          "end": 5,
+          "text": "西廊"
+        }
+      ]
+    },
+    {
+      "entity_id": "e12",
+      "name": "晾图架",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 38,
+          "end": 41,
+          "text": "晾图架"
+        },
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 52,
+          "end": 55,
+          "text": "晾图架"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "f1",
+      "subject": "林岚",
+      "relation": "occupation",
+      "object": "装裱师",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 1,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 17,
+          "end": 30,
+          "quote": "林岚是馆里当晚唯一的装裱师"
+        }
+      ],
+      "critical": true,
+      "cross_segment": false,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f2",
+      "subject": "林岚",
+      "relation": "received",
+      "object": "灰绳铜筒",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 2,
+      "provenance": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 18,
+          "end": 26,
+          "quote": "林岚接过灰绳铜筒"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f3",
+      "subject": "黄披肩客人",
+      "relation": "status",
+      "object": "等待领蓝色门禁卡",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 14,
+          "end": 44,
+          "quote": "黄披肩客人在柜台等着领蓝色门禁卡，手里攥着一张填好的借用单。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f4",
+      "subject": "林岚",
+      "relation": "stored",
+      "object": "灰绳铜筒@北柜",
+      "layer": "OUTER",
+      "epistemic_status": "CLAIMED",
+      "qualifier": {
+        "speaker": "余伯",
+        "modality": "TESTIMONY",
+        "polarity": "POSITIVE"
+      },
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 17,
+          "end": 30,
+          "quote": "林岚是馆里当晚唯一的装裱师"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 18,
+          "end": 26,
+          "quote": "林岚接过灰绳铜筒"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 19,
+          "end": 49,
+          "quote": "余伯说：“装裱师把灰绳铜筒一直留在北柜里，关门后也没挪动。”"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f5",
+      "subject": "林岚",
+      "relation": "moved",
+      "object": "灰绳铜筒@西廊",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 5,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 17,
+          "end": 30,
+          "quote": "林岚是馆里当晚唯一的装裱师"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 18,
+          "end": 46,
+          "quote": "装裱师抱着灰绳铜筒走进西廊，鞋底在木地板上留下一串湿印。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f6",
+      "subject": "黄披肩客人",
+      "relation": "received",
+      "object": "蓝色门禁卡@昨晚七点",
+      "layer": "OUTER",
+      "epistemic_status": "CLAIMED",
+      "qualifier": {
+        "speaker": "沈舟",
+        "modality": "TESTIMONY",
+        "polarity": "POSITIVE"
+      },
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 20,
+          "end": 44,
+          "quote": "沈舟说：“黄披肩客人昨晚七点领走了蓝色门禁卡。”"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f7",
+      "subject": "林岚",
+      "relation": "stored",
+      "object": "灰绳铜筒@南抽屉",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 7,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 17,
+          "end": 30,
+          "quote": "林岚是馆里当晚唯一的装裱师"
+        },
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 21,
+          "end": 45,
+          "quote": "装裱师把灰绳铜筒锁进南抽屉，将抽屉钥匙放回桌沿。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f8",
+      "subject": "黄披肩客人",
+      "relation": "same_as",
+      "object": "桑禾",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 8,
+      "provenance": [
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 23,
+          "end": 47,
+          "quote": "值班员核对了照片和签名，确认黄披肩客人就是桑禾。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f9",
+      "subject": "摄像画面",
+      "relation": "confirms",
+      "object": "林岚:灰绳铜筒@南抽屉",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 9,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 17,
+          "end": 30,
+          "quote": "林岚是馆里当晚唯一的装裱师"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 21,
+          "end": 45,
+          "quote": "画面清楚拍到关门后，装裱师将灰绳铜筒放入南抽屉。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f10",
+      "subject": "f4",
+      "relation": "status",
+      "object": "RETRACTED",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 10,
+      "provenance": [
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 20,
+          "end": 51,
+          "quote": "他说：“我把一眼瞥见的情形说成了一整晚；先前那项陈述我撤回。”"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f11",
+      "subject": "桑禾",
+      "relation": "received",
+      "object": "蓝色门禁卡@昨晚七点",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 11,
+      "provenance": [
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 23,
+          "end": 51,
+          "quote": "登记簿上的签名和时间显示，桑禾昨晚七点领走了蓝色门禁卡。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f12",
+      "subject": "f6",
+      "relation": "status",
+      "object": "CORROBORATED",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 11,
+      "provenance": [
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 51,
+          "end": 81,
+          "quote": "馆长核对原件后说沈舟那项说法得到了证实，便将登记簿递还柜台。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f13",
+      "subject": "桑禾",
+      "relation": "delivered",
+      "object": "蓝色门禁卡@柜台",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 12,
+      "provenance": [
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 19,
+          "end": 32,
+          "quote": "桑禾把蓝色门禁卡交还柜台。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    },
+    {
+      "fact_id": "f14",
+      "subject": "林岚",
+      "relation": "moved",
+      "object": "灰绳铜筒@晾图架",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "qualifier": {},
+      "valid_from_ordinal": 12,
+      "provenance": [
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 32,
+          "end": 56,
+          "quote": "林岚拉开南抽屉，取出灰绳铜筒，抱着它走向晾图架。"
+        }
+      ],
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false,
+      "kind": "assertion"
+    }
+  ],
+  "transitions": [
+    {
+      "claim_fact_id": "f4",
+      "ordinal": 10,
+      "from_status": "CLAIMED",
+      "to_status": "RETRACTED",
+      "evidence_fact_ids": [
+        "f9",
+        "f10"
+      ],
+      "target": {
+        "subject": "林岚",
+        "relation": "stored",
+        "object": "灰绳铜筒@北柜",
+        "layer": "OUTER"
+      }
+    },
+    {
+      "claim_fact_id": "f6",
+      "ordinal": 11,
+      "from_status": "CLAIMED",
+      "to_status": "CORROBORATED",
+      "evidence_fact_ids": [
+        "f11",
+        "f12"
+      ],
+      "target": {
+        "subject": "黄披肩客人",
+        "relation": "received",
+        "object": "蓝色门禁卡@昨晚七点",
+        "layer": "OUTER"
+      }
+    }
+  ],
+  "identity_constraints": [
+    {
+      "left": "e3",
+      "right": "e4",
+      "relation": "SAME_AS",
+      "valid_from_ordinal": 8,
+      "provenance": [
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 23,
+          "end": 47,
+          "quote": "值班员核对了照片和签名，确认黄披肩客人就是桑禾。"
+        }
+      ]
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "required_fact_ids": [
+        "f1"
+      ],
+      "forbidden_fact_ids": [
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "required_fact_ids": [
+        "f1",
+        "f2"
+      ],
+      "forbidden_fact_ids": [
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "forbidden_fact_ids": [
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "forbidden_fact_ids": [
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "forbidden_fact_ids": [
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "forbidden_fact_ids": [
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ],
+      "forbidden_fact_ids": [
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+      ],
+      "forbidden_fact_ids": [
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9"
+      ],
+      "forbidden_fact_ids": [
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10"
+      ],
+      "forbidden_fact_ids": [
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ],
+      "forbidden_fact_ids": [
+        "f13",
+        "f14"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12",
+        "f13",
+        "f14"
+      ],
+      "forbidden_fact_ids": []
+    }
+  ]
+}

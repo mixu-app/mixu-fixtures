@@ -1,0 +1,778 @@
+{
+  "schema_version": 1,
+  "case_id": "hgm-ja-01",
+  "scenario": "role_linked_claim_revision",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "license": "CC0-1.0",
+  "rights_note": "Original synthetic held-out narrative authored before any extraction scores; no external narrative source or personal data.",
+  "facts": [
+    {
+      "fact_id": "f1",
+      "kind": "assertion",
+      "subject": "栗原澄",
+      "relation": "occupation",
+      "object": "朝番の配送係",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 1,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 26,
+          "end": 48,
+          "quote": "栗原澄はその日ただ一人の朝番の配送係だった。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f2",
+      "kind": "assertion",
+      "subject": "栗原澄",
+      "relation": "received",
+      "object": "黄色い帯の丸箱",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 2,
+      "provenance": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 19,
+          "end": 40,
+          "quote": "栗原澄は黄色い帯を巻いた丸箱を受け取った。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f3",
+      "kind": "assertion",
+      "subject": "大工",
+      "relation": "placed",
+      "object": "短い木片@窓辺",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 17,
+          "end": 32,
+          "quote": "大工は短い木片を窓辺に積んだ。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f4",
+      "kind": "assertion",
+      "subject": "栗原澄",
+      "relation": "stored",
+      "object": "黄色い帯の丸箱@正面の棚",
+      "layer": "OUTER",
+      "epistemic_status": "CLAIMED",
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 26,
+          "end": 48,
+          "quote": "栗原澄はその日ただ一人の朝番の配送係だった。"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 19,
+          "end": 40,
+          "quote": "栗原澄は黄色い帯を巻いた丸箱を受け取った。"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 22,
+          "end": 58,
+          "quote": "門番は「朝番の配送係は、あの丸箱を正面の棚に置いたまま帰った」と話した。"
+        }
+      ],
+      "qualifier": {
+        "speaker": "門番",
+        "polarity": "POSITIVE",
+        "modality": "TESTIMONY"
+      },
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f5",
+      "kind": "assertion",
+      "subject": "受付係",
+      "relation": "placed",
+      "object": "白い急須@低い台",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 5,
+      "provenance": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 21,
+          "end": 38,
+          "quote": "受付係は白い急須を低い台に置いた。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f6",
+      "kind": "assertion",
+      "subject": "栗原澄",
+      "relation": "moved",
+      "object": "黄色い帯の丸箱@西の渡り廊下",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 26,
+          "end": 48,
+          "quote": "栗原澄はその日ただ一人の朝番の配送係だった。"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 19,
+          "end": 40,
+          "quote": "栗原澄は黄色い帯を巻いた丸箱を受け取った。"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 0,
+          "end": 22,
+          "quote": "朝番の配送係は時計を見て、布袋を肩に戻した。"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 22,
+          "end": 49,
+          "quote": "その人は受け取った丸箱を抱えて西の渡り廊下へ向かった。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f7",
+      "kind": "assertion",
+      "subject": "庭師",
+      "relation": "moved",
+      "object": "赤い植木鉢@石段の脇",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 7,
+      "provenance": [
+        {
+          "segment_id": "s007",
+          "ordinal": 7,
+          "start": 25,
+          "end": 43,
+          "quote": "庭師は赤い植木鉢を石段の脇へ移した。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f8",
+      "kind": "assertion",
+      "subject": "栗原澄",
+      "relation": "stored",
+      "object": "黄色い帯の丸箱@西側の荷物台",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 8,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 26,
+          "end": 48,
+          "quote": "栗原澄はその日ただ一人の朝番の配送係だった。"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 19,
+          "end": 40,
+          "quote": "栗原澄は黄色い帯を巻いた丸箱を受け取った。"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 22,
+          "end": 49,
+          "quote": "その人は受け取った丸箱を抱えて西の渡り廊下へ向かった。"
+        },
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 0,
+          "end": 23,
+          "quote": "朝番の配送係は渡り廊下の先で荷物台を見つけた。"
+        },
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 23,
+          "end": 50,
+          "quote": "その人は丸箱を西側の荷物台に置き、受領札を差し込んだ。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f9",
+      "kind": "assertion",
+      "subject": "見習い",
+      "relation": "hung",
+      "object": "青い雑巾@手すり",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 9,
+      "provenance": [
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 21,
+          "end": 38,
+          "quote": "見習いは青い雑巾を手すりに干した。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f10",
+      "kind": "assertion",
+      "subject": "映像",
+      "relation": "confirms",
+      "object": "栗原澄:黄色い帯の丸箱@西側の荷物台",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 10,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 26,
+          "end": 48,
+          "quote": "栗原澄はその日ただ一人の朝番の配送係だった。"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 19,
+          "end": 40,
+          "quote": "栗原澄は黄色い帯を巻いた丸箱を受け取った。"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 26,
+          "end": 62,
+          "quote": "映像には朝番の配送係が黄色い帯の丸箱を西側の荷物台に置く姿が映っていた。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f11",
+      "kind": "assertion",
+      "subject": "f4",
+      "relation": "status",
+      "object": "RETRACTED",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 11,
+      "provenance": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 22,
+          "end": 58,
+          "quote": "門番は「朝番の配送係は、あの丸箱を正面の棚に置いたまま帰った」と話した。"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 26,
+          "end": 62,
+          "quote": "映像には朝番の配送係が黄色い帯の丸箱を西側の荷物台に置く姿が映っていた。"
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 18,
+          "end": 59,
+          "quote": "門番は「途中で見た場面を最後までだと思い込んだ。先ほどの証言は撤回する」と言った。"
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f12",
+      "kind": "assertion",
+      "subject": "受付係",
+      "relation": "placed",
+      "object": "訂正の紙@茶色い封筒",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 12,
+      "provenance": [
+        {
+          "segment_id": "s012",
+          "ordinal": 12,
+          "start": 24,
+          "end": 43,
+          "quote": "受付係は訂正の紙を茶色い封筒に入れた。"
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e1",
+      "name": "栗原澄",
+      "aliases": [
+        "朝番の配送係"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 26,
+          "end": 29,
+          "text": "栗原澄"
+        },
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 38,
+          "end": 44,
+          "text": "朝番の配送係"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 19,
+          "end": 22,
+          "text": "栗原澄"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 26,
+          "end": 32,
+          "text": "朝番の配送係"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 0,
+          "end": 6,
+          "text": "朝番の配送係"
+        },
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 0,
+          "end": 6,
+          "text": "朝番の配送係"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 30,
+          "end": 36,
+          "text": "朝番の配送係"
+        }
+      ]
+    },
+    {
+      "entity_id": "e2",
+      "name": "黄色い帯の丸箱",
+      "aliases": [
+        "丸箱"
+      ],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 31,
+          "end": 33,
+          "text": "丸箱"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 36,
+          "end": 38,
+          "text": "丸箱"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 31,
+          "end": 33,
+          "text": "丸箱"
+        },
+        {
+          "segment_id": "s008",
+          "ordinal": 8,
+          "start": 27,
+          "end": 29,
+          "text": "丸箱"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 37,
+          "end": 44,
+          "text": "黄色い帯の丸箱"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 42,
+          "end": 44,
+          "text": "丸箱"
+        }
+      ]
+    },
+    {
+      "entity_id": "e3",
+      "name": "門番",
+      "aliases": [],
+      "layer": "OUTER",
+      "mentions": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 9,
+          "end": 11,
+          "text": "門番"
+        },
+        {
+          "segment_id": "s009",
+          "ordinal": 9,
+          "start": 38,
+          "end": 40,
+          "text": "門番"
+        },
+        {
+          "segment_id": "s010",
+          "ordinal": 10,
+          "start": 62,
+          "end": 64,
+          "text": "門番"
+        },
+        {
+          "segment_id": "s011",
+          "ordinal": 11,
+          "start": 0,
+          "end": 2,
+          "text": "門番"
+        }
+      ]
+    }
+  ],
+  "identity_constraints": [],
+  "transitions": [
+    {
+      "claim_fact_id": "f4",
+      "target": {
+        "subject": "栗原澄",
+        "relation": "stored",
+        "object": "黄色い帯の丸箱@正面の棚",
+        "layer": "OUTER"
+      },
+      "from_status": "CLAIMED",
+      "to_status": "RETRACTED",
+      "ordinal": 11,
+      "evidence_fact_ids": [
+        "f10",
+        "f11"
+      ]
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "required_fact_ids": [
+        "f1"
+      ],
+      "forbidden_fact_ids": [
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "required_fact_ids": [
+        "f1",
+        "f2"
+      ],
+      "forbidden_fact_ids": [
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "forbidden_fact_ids": [
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "forbidden_fact_ids": [
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "forbidden_fact_ids": [
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "forbidden_fact_ids": [
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ],
+      "forbidden_fact_ids": [
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+      ],
+      "forbidden_fact_ids": [
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9"
+      ],
+      "forbidden_fact_ids": [
+        "f10",
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 10,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10"
+      ],
+      "forbidden_fact_ids": [
+        "f11",
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 11,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11"
+      ],
+      "forbidden_fact_ids": [
+        "f12"
+      ]
+    },
+    {
+      "ordinal": 12,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "f12"
+      ],
+      "forbidden_fact_ids": []
+    }
+  ]
+}

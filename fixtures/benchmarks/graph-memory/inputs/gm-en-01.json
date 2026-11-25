@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "case_id": "gm-en-01",
+  "language": "en",
+  "segments": [
+    {
+      "segment_id": "s001",
+      "ordinal": 1,
+      "text": "At the small instrument archive, clerk Nia began an incident record. Owen said, \"The east door was locked at noon.\" Nia wrote his words as testimony, without calling them a verified observation. The record would remain open until independent material could be checked."
+    },
+    {
+      "segment_id": "s002",
+      "ordinal": 2,
+      "text": "A second witness spoke separately, without seeing the first statement. Bea said, \"The west lamp was lit at noon.\" Nia recorded the time and the speaker. She did not use agreement about the room to validate either statement about its separate fittings."
+    },
+    {
+      "segment_id": "s003",
+      "ordinal": 3,
+      "text": "The archive continued its ordinary maintenance while the statements waited. The porter placed a green toolbox on the front desk. Nia entered this delivery in a separate column, because its arrival supplied no evidence about the door or the lamp at the earlier time."
+    },
+    {
+      "segment_id": "s004",
+      "ordinal": 4,
+      "text": "Nia obtained a continuous, time-stamped recording of the east entrance. The recording shows the east door open at noon. Owen then said, \"My locked-door statement was wrong; I retract it.\" Nia preserved both the original claim and this explicit withdrawal in the record."
+    },
+    {
+      "segment_id": "s005",
+      "ordinal": 5,
+      "text": "The lamp log arrived from a different instrument. A verified photograph shows the west lamp lit at noon. Nia marked Bea's statement as corroborated by this photograph, rather than using it to settle any other witness statement. The earlier door retraction remained in the archive."
+    },
+    {
+      "segment_id": "s006",
+      "ordinal": 6,
+      "text": "Nia filed the two resolutions independently, keeping the speakers attached to their original words. The final index labels Owen's door claim retracted and Bea's lamp claim corroborated. It does not identify a culprit or infer why Owen was mistaken. Both source records remain available for inspection."
+    }
+  ]
+}

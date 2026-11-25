@@ -37,3 +37,16 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   synthetic fixture (CC0-1.0) testing nested manuscript diegesis (`INNER_WORK` vs.
   `OUTER_REALITY`), time-loop epochs (`loop_epoch`), and competing detective
   hypothesis cascades (`solution_alpha` vs. `solution_omega`).
+- `fixtures/benchmarks/graph-memory` & `fixtures/benchmarks/graph-memory-heldout`:
+  original CC0 segmented incremental graph-memory diagnostic corpora (6 × 6-segment
+  multilingual cases + 3 × 12-segment role-linked claim-revision held-out cases),
+  JSON schemas (`schema/graph-memory-input.schema.json`,
+  `schema/graph-memory-gold.schema.json`), deterministic exporter/validator
+  (`tools/graph_memory.py`), and unit tests (`tests/test_graph_memory.py`).
+- `fixtures/benchmarks/graph-updates`: source-defined one-step graph-update probes
+  (`selection.json`, `targets.json`), evaluator (`tools/graph_update_eval.py`),
+  and unit tests (`tests/test_graph_updates.py`).
+- `fixtures/benchmarks/sequential-source`: fresh sequential source-lookup benchmark
+  extension (`new-input.json`, `new-gold.json`), exporter
+  (`tools/sequential_source_fixtures.py`), and unit tests
+  (`tests/test_sequential_source.py`).

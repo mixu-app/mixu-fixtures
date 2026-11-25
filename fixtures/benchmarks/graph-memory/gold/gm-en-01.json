@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "case_id": "gm-en-01",
+  "scenario": "explicit_claim_resolution",
+  "content_basis": "SYNTHETIC_ORIGINAL",
+  "license": "CC0-1.0",
+  "rights_note": "Original synthetic micro-story authored for this benchmark; no external narrative source or personal data.",
+  "facts": [
+    {
+      "fact_id": "f1",
+      "kind": "assertion",
+      "subject": "east door",
+      "relation": "locked_at",
+      "object": "noon",
+      "layer": "OUTER",
+      "epistemic_status": "CLAIMED",
+      "valid_from_ordinal": 1,
+      "provenance": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 69,
+          "end": 115,
+          "quote": "Owen said, \"The east door was locked at noon.\""
+        }
+      ],
+      "qualifier": {
+        "speaker": "Owen",
+        "polarity": "POSITIVE",
+        "modality": "TESTIMONY"
+      },
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f2",
+      "kind": "assertion",
+      "subject": "west lamp",
+      "relation": "lit_at",
+      "object": "noon",
+      "layer": "OUTER",
+      "epistemic_status": "CLAIMED",
+      "valid_from_ordinal": 2,
+      "provenance": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 71,
+          "end": 113,
+          "quote": "Bea said, \"The west lamp was lit at noon.\""
+        }
+      ],
+      "qualifier": {
+        "speaker": "Bea",
+        "polarity": "POSITIVE",
+        "modality": "TESTIMONY"
+      },
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f3",
+      "kind": "assertion",
+      "subject": "porter",
+      "relation": "placed",
+      "object": "green toolbox@front desk",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 3,
+      "provenance": [
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 76,
+          "end": 128,
+          "quote": "The porter placed a green toolbox on the front desk."
+        }
+      ],
+      "qualifier": {},
+      "critical": false,
+      "cross_segment": false,
+      "distractor": true
+    },
+    {
+      "fact_id": "f4",
+      "kind": "assertion",
+      "subject": "east door",
+      "relation": "open_at",
+      "object": "noon",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 72,
+          "end": 119,
+          "quote": "The recording shows the east door open at noon."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f5",
+      "kind": "assertion",
+      "subject": "f1",
+      "relation": "status",
+      "object": "RETRACTED",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 4,
+      "provenance": [
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 120,
+          "end": 187,
+          "quote": "Owen then said, \"My locked-door statement was wrong; I retract it.\""
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f6",
+      "kind": "assertion",
+      "subject": "west lamp",
+      "relation": "lit_at",
+      "object": "noon",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 5,
+      "provenance": [
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 50,
+          "end": 104,
+          "quote": "A verified photograph shows the west lamp lit at noon."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    },
+    {
+      "fact_id": "f7",
+      "kind": "assertion",
+      "subject": "archive",
+      "relation": "records",
+      "object": "door RETRACTED; lamp CORROBORATED",
+      "layer": "OUTER",
+      "epistemic_status": "OBSERVED",
+      "valid_from_ordinal": 6,
+      "provenance": [
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 100,
+          "end": 185,
+          "quote": "The final index labels Owen's door claim retracted and Bea's lamp claim corroborated."
+        }
+      ],
+      "qualifier": {},
+      "critical": true,
+      "cross_segment": true,
+      "distractor": false
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "e1",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 69,
+          "end": 73,
+          "text": "Owen"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 120,
+          "end": 124,
+          "text": "Owen"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 123,
+          "end": 127,
+          "text": "Owen"
+        }
+      ],
+      "name": "Owen",
+      "aliases": [],
+      "layer": "OUTER"
+    },
+    {
+      "entity_id": "e2",
+      "mentions": [
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 71,
+          "end": 74,
+          "text": "Bea"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 116,
+          "end": 119,
+          "text": "Bea"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 155,
+          "end": 158,
+          "text": "Bea"
+        }
+      ],
+      "name": "Bea",
+      "aliases": [],
+      "layer": "OUTER"
+    },
+    {
+      "entity_id": "e3",
+      "mentions": [
+        {
+          "segment_id": "s001",
+          "ordinal": 1,
+          "start": 39,
+          "end": 42,
+          "text": "Nia"
+        },
+        {
+          "segment_id": "s002",
+          "ordinal": 2,
+          "start": 114,
+          "end": 117,
+          "text": "Nia"
+        },
+        {
+          "segment_id": "s003",
+          "ordinal": 3,
+          "start": 129,
+          "end": 132,
+          "text": "Nia"
+        },
+        {
+          "segment_id": "s004",
+          "ordinal": 4,
+          "start": 0,
+          "end": 3,
+          "text": "Nia"
+        },
+        {
+          "segment_id": "s005",
+          "ordinal": 5,
+          "start": 105,
+          "end": 108,
+          "text": "Nia"
+        },
+        {
+          "segment_id": "s006",
+          "ordinal": 6,
+          "start": 0,
+          "end": 3,
+          "text": "Nia"
+        }
+      ],
+      "name": "Nia",
+      "aliases": [],
+      "layer": "OUTER"
+    }
+  ],
+  "identity_constraints": [],
+  "transitions": [
+    {
+      "claim_fact_id": "f1",
+      "from_status": "CLAIMED",
+      "to_status": "RETRACTED",
+      "ordinal": 4,
+      "evidence_fact_ids": [
+        "f4",
+        "f5"
+      ],
+      "target": {
+        "subject": "east door",
+        "relation": "locked_at",
+        "object": "noon",
+        "layer": "OUTER"
+      }
+    },
+    {
+      "claim_fact_id": "f2",
+      "from_status": "CLAIMED",
+      "to_status": "CORROBORATED",
+      "ordinal": 5,
+      "evidence_fact_ids": [
+        "f6"
+      ],
+      "target": {
+        "subject": "west lamp",
+        "relation": "lit_at",
+        "object": "noon",
+        "layer": "OUTER"
+      }
+    }
+  ],
+  "horizons": [
+    {
+      "ordinal": 1,
+      "required_fact_ids": [
+        "f1"
+      ],
+      "forbidden_fact_ids": [
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "required_fact_ids": [
+        "f1",
+        "f2"
+      ],
+      "forbidden_fact_ids": [
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3"
+      ],
+      "forbidden_fact_ids": [
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "forbidden_fact_ids": [
+        "f6",
+        "f7"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "forbidden_fact_ids": [
+        "f7"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "required_fact_ids": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ],
+      "forbidden_fact_ids": []
+    }
+  ]
+}

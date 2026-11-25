@@ -50,6 +50,22 @@ just validate
 | [`english-spoiler-eval`](fixtures/eval/english-spoiler-eval/eval-set.json) | 剧透判定评测集（英文） | 68 条英文微型悬疑样本，覆盖 6 大剧透挑战及 claim/fact/inference 认知边界，严格按文本隔离 train/val/test | [PROVENANCE.md](fixtures/eval/english-spoiler-eval/PROVENANCE.md) |
 | [`japanese-spoiler-eval`](fixtures/eval/japanese-spoiler-eval/eval-set.json) | 剧透判定评测集（日文） | 68 条日文新本格微型悬疑样本，含 HTML 及青空文库格式ルビ注音与语气助词边界测试，严格按文本隔离 train/val/test | [PROVENANCE.md](fixtures/eval/japanese-spoiler-eval/PROVENANCE.md) |
 
+## 增量图谱记忆实验语料
+
+[分段诊断基准](fixtures/benchmarks/graph-memory/README.md)包含六篇原创 CC0
+短故事，以及可配置的 24/48 段相关关系与干扰关系压力扩展。模型输入和答案分开导出，
+每条标注都有精确文本来源及前缀禁见范围；它不替代现有防剧透 fixture，也不代表模型效果已验收。
+
+```sh
+just export-graph-memory "$GRAPH_MEMORY_OUTPUT" 24,48 2
+```
+
+另有独立的[跨段角色指代留出组](fixtures/benchmarks/graph-memory-heldout/README.md)：
+中英日各一篇十二段原创故事，检验早期角色、物品与后续证词修正的连接。
+该组在抽取评分前设计，独立导出，不改写首版六例；仍只是小型诊断语料。
+
+单步更新探针与冷启动来源回查导出见[图谱更新探针](fixtures/benchmarks/graph-updates/README.md)和[顺序来源回查基准](fixtures/benchmarks/sequential-source/README.md)。
+
 ## English
 
 Public, rights-cleared spoiler regression corpus. Each fixture pairs an original

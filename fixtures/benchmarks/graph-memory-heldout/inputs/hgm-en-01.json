@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "case_id": "hgm-en-01",
+  "language": "en",
+  "segments": [
+    {
+      "segment_id": "s001",
+      "ordinal": 1,
+      "text": "The tide had left salt along the museum windows. Leon was the only bell mender working that evening. He signed the visitor book and hung his coat behind the workbench. A curator brought tea in a chipped cup while the last school party crossed the yard."
+    },
+    {
+      "segment_id": "s002",
+      "ordinal": 2,
+      "text": "The curator handed over the small tools before closing the public rooms. Leon received a copper case tied with a white cord. He tried the catch twice, then set it beside his coat. Outside, the caretaker was collecting the signs from the wet pavement."
+    },
+    {
+      "segment_id": "s003",
+      "ordinal": 3,
+      "text": "A final delivery interrupted the quiet. The driver put a folded blue blanket on the reception chair. Someone had ordered it for a display stand, but the label was damp and difficult to read. The curator fetched a towel and spread the label flat on the desk."
+    },
+    {
+      "segment_id": "s004",
+      "ordinal": 4,
+      "text": "At breakfast the caretaker was asked about the missing equipment. He said, \"The bell mender kept that case in the workshop after closing.\" He remembered seeing the white cord near the coat and thought the case had stayed there while he checked the shutters."
+    },
+    {
+      "segment_id": "s005",
+      "ordinal": 5,
+      "text": "The workshop smelled of polish as the evening work continued in the earlier account. A cleaner moved a wooden stool to the washroom. Its uneven leg scraped the tiles, and the sound made the curator look up from a pile of labels beside her tea."
+    },
+    {
+      "segment_id": "s006",
+      "ordinal": 6,
+      "text": "The bell mender finished testing the hanging bracket and reached behind the bench for his coat. He carried the cord-tied case to the upper landing. A loose stair tread creaked beneath his boot. He stopped there to let the cleaner come down with an empty bucket."
+    },
+    {
+      "segment_id": "s007",
+      "ordinal": 7,
+      "text": "In the yard, rainwater dripped from the rolled display awning. The curator placed a green watering can beside the outer steps. She noticed a torn plant label on the ground and tucked it into her notebook before going back inside to collect the empty cups."
+    },
+    {
+      "segment_id": "s008",
+      "ordinal": 8,
+      "text": "The bell mender paused at the landing window while a barge passed below. He left the case under the narrow oak seat. The white cord lay against the seat leg, where it could be seen from the stairs. Then the workroom light went out downstairs."
+    },
+    {
+      "segment_id": "s009",
+      "ordinal": 9,
+      "text": "The next morning began with deliveries and a wet umbrella blocking the reception desk. A messenger laid a square parcel on the tiled floor. The curator stepped around it to open the window, and a gull landed briefly on the outside sill before the bell rang."
+    },
+    {
+      "segment_id": "s010",
+      "ordinal": 10,
+      "text": "The curator developed the maintenance camera images before lunch. A timed image shows the bell mender placing the white-cord case under the oak seat after closing. The caretaker recognized the railing in the background. He asked to see the page where his earlier statement had been written."
+    },
+    {
+      "segment_id": "s011",
+      "ordinal": 11,
+      "text": "The caretaker crossed out one line, leaving the original words readable. He said, \"I mistook the earlier glimpse for the whole evening; I withdraw that statement.\" He signed in the margin and waited while the curator attached the camera print to the page with a brass clip."
+    },
+    {
+      "segment_id": "s012",
+      "ordinal": 12,
+      "text": "After lunch the room returned to its usual slow rhythm. The curator put the clipped pages in a flat red folder. She carried the cold cups to the washroom, shook rain from the window cloth and closed the visitor book when the first afternoon guests reached the gate."
+    }
+  ]
+}
